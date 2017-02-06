@@ -1,10 +1,16 @@
+/* IE8-10 */
+@media screen\0{
+	.content .box{background-color: none;}
+}
 /* iphone */
 @media  screen  and (min-width: 320px) and (max-width: 767px)  {
 
 	body{width: 100%;height: 100%;}
+	 	header nav li:first-child{background-color: #EEA9B8;}
+		section{width: 100%;height: auto;}
    		.slider-wrapper{width: 100%;height: auto;overflow: hidden;} /*轮播图*/
 		.content{width: 100%;overflow: hidden;padding: 0 10%;}
-		.content > div{width: 100%;;height: auto;text-align: center;padding: 6% 0;}
+		.content > div{width: 100%;;height: auto;margin: 0 auto;text-align: center;padding: 6% 0;}
 		.content > div:last-child{margin-bottom: 2rem;margin-top: -3rem;}			
 		.content hr{border: 1px solid gray;}
 		.content h2{color: #f10180;}
@@ -28,17 +34,19 @@
 @media  screen  and (min-width: 768px) and (max-width: 1023px){
 
 	body{width: 100%;height: 100%;}
+	 	header nav li:first-child{border-bottom: 3px solid #EEA9B8;}
+	 	section{width: 100%;height: auto;}
    		.slider-wrapper{width: 100%;height: auto;overflow: hidden;} /*轮播图*/
 		.content{width: 100%;height: auto;overflow: hidden;padding: 0 10%;}
-		.content > div{width: 100%;height: auto;text-align: center;padding: 6% 0;}	
-		.content > div:last-child{margin-bottom: 2rem;margin-top: -3rem;}
+		.content > div{width: 100%;text-align: center;padding: 6% 0;}	
+		.content > div:last-child{margin: 0 auto;margin-bottom: 2rem;margin-top: -3rem;}
 		.content hr{border: 1px solid gray;}
 		.content h2{color: #f10180;}
 		.content .release p,.content .about p{font-size: 1rem;color: black;}
 		.content .release > div{width: 95%;height: 160px;margin: 0 auto 3rem;}
-		.content .release > div > div:first-child{float: left;width: 45%;height: 100%;}
-		.content .release > div > div:last-child{float: right;width: 45%;height: 100%;}
-		.content .box{width: 100%;height: 100%;line-height: 13rem;background-color: rgba(36, 36, 36,0.4);}
+		.content .release > div > div:first-child{float: left;width: 48%;height: 100%;}
+		.content .release > div > div:last-child{float: right;width: 48%;height: 100%;}
+		.content .box{width: 100%;height: 100%;line-height: 14rem;background-color: rgba(36, 36, 36,0.4);}
 		.content .release .box:hover{background-color: rgba(36, 36, 36,0.6);}
 		.content .release a{display: inline-block;color: #f10180;font-size: 2.2rem;font-weight: bold;text-shadow: 0 2px 2px black;}
 		.content .release .pic1{background: url(images/homeimg/waitao.jpg) no-repeat center;background-size: 100% 100%;}
@@ -55,18 +63,18 @@
 
 /*大于1024px*/
 @media  screen  and (min-width: 1024px)  {
-
+ 	header nav li:first-child{border-bottom: 3px solid #EEA9B8;}
  	section{width: 100%;height: auto;}
    		.slider-wrapper{width: 100%;height: auto;overflow: hidden;} /*轮播图*/
 		.content{width: 100%;height: auto;margin: 2.5% auto;overflow: hidden;padding: 0 18%;}
-		.content > div{width: 1200px;height: auto;margin: 0 auto;padding: 27px 0;text-align: center;}	
+		.content > div{width: 1280px;height: auto;margin: 0 auto;padding: 27px 0;text-align: center;}	
 		.content hr{border: 1px solid gray;}
 		.content h2{color: #f10180;}
 		.content .release p,.content .about p{font-size: 1rem;color: black;}
-		.content .release > div{width: 95%;height: 280px;margin: 0 auto 3rem;}
+		.content .release > div{width: 95%;height: 310px;margin: 0 auto 3rem;}
 		.content .release > div > div:first-child{float: left;display: inline;width: 47%;height: 100%;}
 		.content .release > div > div:last-child{float: right;display: inline;width: 47%;height: 100%;}
-		.content .box{width: 100%;height: 100%;line-height: 20rem;background-color: rgba(36, 36, 36,0.4);font-size: 8rem;}
+		.content .box{width: 100%;height: 100%;line-height: 22rem;background-color: rgba(36, 36, 36,0.4);font-size: 8rem;}
 		.content .release .box:hover{background-color: rgba(36, 36, 36,0.6);}
 		.content .release a{display: inline-block;color: #f10180;font-size: 2.2rem;font-weight: bold;text-shadow: 0 2px 2px black;}
 		.content .release .pic1{background: url(images/homeimg/waitao.jpg) no-repeat center;background-size: 100% 100%;}

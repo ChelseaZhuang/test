@@ -6,7 +6,6 @@ $(document).ready(function(){
 			}, 400); 
 		return false; 
 		}); 
-
 	$("#fixednav1").mouseenter(function(){
 		$(this).next().show(600);
 	});
@@ -25,5 +24,4 @@ $(document).ready(function(){
 	$("#fixednav3").mouseleave(function(){
 		$(this).next().hide(400);
 	});
-
 })

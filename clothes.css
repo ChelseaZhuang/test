@@ -2,21 +2,22 @@
 @media  screen  and (min-width: 320px) and (max-width: 767px)  {
 
 	body{width: 100%;height: 100%;}
-    .banner{width: 100%;height: 400px;background:url(images/homeimg/sectionbgimg.jpg) no-repeat top center;}
+	header .bottomline{background-color: #EEA9B8;}	
+    .banner{width: 100%;height: 150px;background:url(images/homeimg/sectionbgimg.jpg) no-repeat top center;background-size: 100%;}
  	section{width: 100%;height: auto;}
 		.content{width: 95%;height: auto;overflow: hidden;margin: 0 auto;}
 		.content > div{width: 100%;height: auto;text-align: center;padding: 5% 0;margin-top: 5%;}
 		.content hr{border: 1px solid gray;}
 		.content h2{color: #f10180;}
-		.content a{font-size: 1.6rem;}
-		.content > div > a{display: inline-block;border-bottom: 4px solid #EE1289;line-height: 2.6rem;color: #4D4D4D;text-align: center;width: 140px;}
+		.content a{font-size: 1.4rem;}
+		.content > div > a{display: inline-block;width: 140px;padding: 1rem;background-color: #404040;color: white;text-align: center;}
 		.content > div > div{width: 100%;height: auto;margin-bottom: 2rem;overflow: hidden;}
-		.content > div > div a{color: #EE1289;}]
-		.content .listintro > div{float: left;display: inline;width: 40%;height: auto;margin-bottom: 2rem;margin: 0 auto;margin-left: 2.1rem;}
-		.content .listchild{float: left;display: inline;padding: 20px 0;}
+		.content > div > div a{color: #EE1289;}
+		.content .listintro > div{float: left;display: inline;width: 40%;height: auto;margin: 2rem 1rem 1rem 1rem;padding: 1rem;border: 1px solid #B7B7B7;}
+		.content .listchild{padding: 20px 0;}
 		.content .listchild button{float: right;display: inline;width: 6rem;height: 5rem;font-size: 3rem;background-color: white;border-style: none;border: 2px solid black;}
 		.content .listchild button:active{outline: none;}
-		.content .listchild img{width: 100%;margin-top: 1rem;}
+		.content .listchild img{width: 80%;margin-top: 1rem;}
 		.content .listchild table{width: 100%;text-align: left;margin-top: 4rem;}
 		.content .listchild table caption{font-size: 2.2rem;color: black;margin-bottom: 1rem;}
 		.content .listchild table td{padding:;font-size: 1rem;color: #6B6B6B;}
@@ -28,7 +29,8 @@
 @media  screen  and (min-width: 768px) and (max-width: 1023px){
 
 	body{width: 100%;height: 100%;}
-    .banner{width: 100%;height: 400px;background:url(images/homeimg/sectionbgimg.jpg) no-repeat top center;}
+	header .bottomline{border-bottom: 3px solid #EEA9B8;}	
+    .banner{width: 100%;height: 400px;background:url(images/homeimg/sectionbgimg.jpg) no-repeat top center;background-size: 100%;}
  	section{width: 100%;height: auto;}
 		.content{width: 95%;height: auto;overflow: hidden;margin: 0 auto;}
 		.content > div{width: 100%;height: auto;text-align: center;padding: 5% 0;margin-top: 5%;}
@@ -52,7 +54,7 @@
 
 /*大于1024px*/
 @media  screen  and (min-width: 1024px)  {	
-
+	header .bottomline{border-bottom: 3px solid #EEA9B8;}	
     .banner{width: 100%;height: 500px;background:url(images/homeimg/sectionbgimg.jpg) no-repeat top center;}
  	section{width: 100%;height: auto;}
 		.content{width: 65%;height: auto;margin: 2.5% auto;overflow: hidden;}
@@ -60,16 +62,18 @@
 		.content hr{border: 1px solid gray;}
 		.content h2{color: #f10180;}
 		.content a{font-size: 1.4rem;}
-		.content > div > a{display: inline-block;border-bottom: 4px solid #EE1289;line-height: 2.6rem;color: #4D4D4D;text-align: center;width: 140px;
-		transition: width 0.8s;
-		-moz-transition: width 0.8s;
-		-webkit-transition: width 0.8s;
-		-o-transition: width 0.8s;}
+		.content > div > a{
+			display: inline-block;border-bottom: 4px solid #EE1289;line-height: 2.6rem;color: #4D4D4D;text-align: center;width: 140px;
+			transition: width 0.8s;
+			-moz-transition: width 0.8s;
+			-webkit-transition: width 0.8s;
+			-o-transition: width 0.8s;}
 		.content > div > a:hover{width: 190px;color: #EE1289;}
 		.content > div > div{width: 100%;height: auto;margin-bottom: 30px;overflow: hidden;}
 		.content > div > div a{color: #EE1289;}
 		.content > div > div a:hover{color: #EE799F;}
-		.content .listintro > div{float: left;display: inline;width: 20%;margin: 2% 2.5%;padding:1.5%;cursor: pointer;
+		.content .listintro > div{
+			float: left;display: inline;width: 20%;margin: 2% 2.5%;padding:1.5%;cursor: pointer;
 			position:relative;
    			background: -webkit-gradient(linear, 0% 20%, 0% 92%, from(#f3f3f3), to(#fff), color-stop(.1,#f3f3f3));
     		border-top: 1px solid #ccc;
@@ -89,9 +93,13 @@
     		rotate(-20deg)
     		skew(-40deg,-3deg)
     		translate(-13px,-13px);}
-
 		.content .listintro > div:after{
     		content: '';
+    		-moz-z-index: -1;
+  			-webkit-z-index: -1;
+ 			-o-z-index: -1;
+ 			-ms-z-index: -1;
+  			-khtml-z-index: -1;
     		z-index: -1;
     		width: 100px;
     		height: 100px;
@@ -117,6 +125,4 @@
 		.content .listchild table .introWord{font-size: 1.2rem;color: #292929;}
 		.content .listchild table span{font-size: 2rem;color: #EE1289;}
 }
-
-
 

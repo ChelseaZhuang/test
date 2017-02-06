@@ -1,7 +1,12 @@
+/* IE8-10 */
+@media screen\0{
+	section .box{background-color: none;}
+}
 /* iphone */
 @media  screen  and (min-width: 320px) and (max-width: 767px)  {
 
 	body{width: 100%;height: 100%;}
+	header nav li:last-child{background-color: #EEA9B8;}
 	section{width: 100%;height: auto;background: url(images/homeimg/contactbgimg.jpg) no-repeat center top;font-size: 1rem;}
 	section .box{width: 100%;height: 100%;background-color: rgba(33,33,33,0.8);padding: 4%;}
 	section .box form{margin-left: 10%;width:90%;height: 80%;}
@@ -18,6 +23,7 @@
 @media  screen  and (min-width: 768px) and (max-width: 1023px){
 
 	body{width: 100%;height: 100%;}
+	header nav li:last-child{border-bottom: 3px solid #EEA9B8;}	
 	section{width: 100%;height: 700px;background: url(images/homeimg/contactbgimg.jpg) repeat top;}
 	section .box{width: 100%;height: 100%;background-color: rgba(33,33,33,0.8);padding: 4%;}
 	section .box form{margin-left: 16%;width: 40%;height: 80%;}
@@ -31,6 +37,7 @@
 
 /*大于1024px*/
 @media  screen  and (min-width: 1024px)  {	
+	header nav li:last-child{border-bottom: 3px solid #EEA9B8;}
 	section{width: 100%;height: auto;background: url(images/homeimg/contactbgimg.jpg) repeat top;}
 	section .box{width: 100%;height: 100%;background-color: rgba(33,33,33,0.8);padding: 4%;}
 	section .box form{margin-left: 25%;width: 40%;height: 80%;}
