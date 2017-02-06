@@ -8,6 +8,11 @@
 	<meta name="HandheldFriendly" content="true">
 	<link href="same.css" rel="stylesheet" type="text/css" />	
 	<link href="home.css" rel="stylesheet" type="text/css" />
+	<link href="jquery-2.1.4/20130926194009809/css/nivo-slider.css" rel="stylesheet" type="text/css" /> <!-- 图片轮播 -->
+	<link href="jquery-2.1.4/20130926194009809/themes/dark/dark.css" rel="stylesheet" type="text/css" /> <!-- 图片轮播 -->	
+    <link href="jquery-2.1.4/20130926194009809/themes/default/default.css" rel="stylesheet" type="text/css" /> <!-- 图片轮播 -->
+    <link href="jquery-2.1.4/20130926194009809/themes/dark/dark.css" rel="stylesheet" type="text/css" /> <!-- 图片轮播 -->
+    <link href="jquery-2.1.4/20130926194009809/themes/bar/bar.css" rel="stylesheet" type="text/css" /> <!-- 图片轮播 -->
 	<link href="jquery-2.1.4/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">   <!-- font-awesome字体图标 -->
 	<link href="jquery-2.1.4/bootstrap.min.css" rel="stylesheet"> <!-- bootstrap -->
  	<!--[if IE 6]>
@@ -32,13 +37,10 @@
 	<div>
 		<div><a href="#"><img src="images/homeimg/LOGO.png" alt="LOGO"></a></div>
 		<div>
-			<i class="fa fa-volume-control-phone fa-2x"></i>
-			<span>4001-800-888</span>
+			<span><b class="fa fa-volume-control-phone fa-2x"></b>4001-800-888</span>
 			<a href="" target="_blank"><i class="fa fa-weibo fa-lg"></i></a>
 			<a href="" target="_blank"><i class="fa fa-twitter fa-lg"></i></a>
 			<a href="" target="_blank"><i class="fa fa-share-alt fa-lg"></i></a>
-			<a class="none" href="" target="_blank"><i class="fa fa-qq fa-2x"></i></a>
-			<a class="none" href="" target="_blank"><i class="fa fa-weixin fa-2x"></i></a>
 		</div>
 	</div>
 	<nav>
@@ -52,14 +54,14 @@
 	</nav>
 </header>
 
-<div class="banner"><!-- 图片轮播 -->
-   	<ul>
-        <li><img src="images/homeimg/sectionbgimg.jpg" alt="bannerimg"></li>
-        <li><img src="images/homeimg/sectionbgimg2.jpg" alt="bannerimg"></li>
-        <li><img src="images/homeimg/sectionbgimg4.jpg" alt="bannerimg"></li>
-        <li><img src="images/homeimg/sectionbgimg3.jpg" alt="bannerimg"></li>
-    </ul>
-</div><!-- end 图片轮播 -->
+<div class="slider-wrapper theme-default"><!-- 图片轮播 -->
+    <div id="slider" class="nivoSlider">
+        <img src="jquery-2.1.4/20130926194009809/images/toystory.jpg" data-thumb="jquery-2.1.4/20130926194009809/images/toystory.jpg" alt="轮播图"/>
+        <img src="jquery-2.1.4/20130926194009809/images/up.jpg" data-thumb="jquery-2.1.4/20130926194009809/images/up.jpg" alt="轮播图" />
+        <img src="jquery-2.1.4/20130926194009809/images/walle.jpg" data-thumb="jquery-2.1.4/20130926194009809/images/walle.jpg" alt="轮播图" data-transition="slideInLeft" />
+        <img src="jquery-2.1.4/20130926194009809/images/nemo.jpg" data-thumb="jquery-2.1.4/20130926194009809/images/nemo.jpg" alt="轮播图" />
+    </div>
+</div> <!-- end 图片轮播 -->
 
 <section>
 	<div class="content">
@@ -91,14 +93,13 @@
 					<div class="box"><a href="clothes.html" target="_blank" ">最IN单鞋</a></div>				
 				</div>
 			</div>  
-		</div>
-
+		</div><!-- end release-->
 		<div class="about">
 			<h2>品牌故事</h2><p>BRAND STORY</p>
 			<hr>
 			<div><p><span>品牌介绍 About Us</span>CHELSEA,introcontentintrocontentintrocontentintrocontentintrocontentintrocontentintrocontentintrocontentintrocontentintrocontentintrocontentintrocontentintrocontentintrocontentintrocontentintrocontentintrocontentintrocontentintrocontentintrocontentintrocontentintrocontentintrocontentintrocontentintrocontentintrocontentintrocontentintrocontentintrocontent</p></div>
-		</div>
-	</div>
+		</div><!-- end about-->
+	</div><!-- end content-->
 </section>
 
 <footer>
@@ -114,7 +115,8 @@
 <!--js脚本文件-->
 	<script src="jquery-2.1.4/jquery.min.js"></script> <!-- jquery -->
 	<script src="fixed.js"></script>  <!-- fixednav箭头滚到顶部-->
-	<script type="text/javascript" src="jquery-2.1.4/jquery.terseBanner.min.js"></script>  <!-- 轮播图 -->
+	<!--<script type="text/javascript" src="jquery-2.1.4/jquery.terseBanner.min.js"></script> --> <!-- 轮播图 -->
+	<script type="text/javascript" src="jquery-2.1.4/20130926194009809/js/jquery.nivo.slider.js"></script>  <!-- 轮播图 -->
 	<script src="jquery-2.1.4/bootstrap.min.js"></script> <!-- bootstrap -->
 	<!--[if lt IE 9]>
     	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -122,9 +124,12 @@
     <![endif]-->
 
 	<script>
-	$(function() {
-   		$('.banner').terseBanner();
-	});   //轮播图
+		//$(function() {
+   		//	$('.banner').terseBanner();
+		//});     //轮播图
+		$(window).load(function() {
+        	$('#slider').nivoSlider();
+		});  //轮播图
 	</script>	
 </body>
 </html>
