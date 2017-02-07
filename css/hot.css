@@ -24,7 +24,7 @@
     section hr{border: 1px solid gray;}
     section .content{width: 90%;height: 100%;margin: 0 auto;overflow: hidden;}
     section .content > div{width: 100%;height:150px;margin-bottom: 5%;}
-    section .content > div > a{float: left;width: 20%;height: 100%;margin-left: 3.5%;}
+    section .content > div > a{float: left;display:inline-block;zoom:1;*display: inline;width: 20%;height: 100%;margin-left: 3.5%;}
     section .content > div > a > img{width: 100%;height: 100%;}
 }
 

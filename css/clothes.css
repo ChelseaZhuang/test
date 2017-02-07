@@ -12,9 +12,9 @@
 		.content > div > a{display: inline-block;width: 140px;padding: 1rem;background-color: #404040;color: white;text-align: center;}
 		.content > div > div{width: 100%;height: auto;margin-bottom: 2rem;overflow: hidden;}
 		.content > div > div a{color: #EE1289;}
-		.content .listintro > div{float: left;display:inline-block;zoom:1;*display: inline;width: 40%;height: auto;margin: 2rem 1rem 1rem 1rem;padding: 1rem;border: 1px solid #B7B7B7;}
+		.content .listintro > div{float: left;width: 40%;height: auto;margin: 2rem 1rem 1rem 1rem;padding: 1rem;border: 1px solid #B7B7B7;}
 		.content .listchild{padding: 20px 0;}
-		.content .listchild button{float: right;display:inline-block;zoom:1;*display: inline;width: 6rem;height: 5rem;font-size: 3rem;background-color: white;border-style: none;border: 2px solid black;}
+		.content .listchild button{float: right;width: 6rem;height: 5rem;font-size: 3rem;background-color: white;border-style: none;border: 2px solid black;}
 		.content .listchild button:active{outline: none;}
 		.content .listchild img{width: 80%;margin-top: 1rem;}
 		.content .listchild table{width: 100%;text-align: left;margin-top: 4rem;}
