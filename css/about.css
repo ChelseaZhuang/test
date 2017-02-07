@@ -1,14 +1,9 @@
-/* IE8-10 */
-@media screen\0{
-	section .box{background-color: none;}
-}
-
 /* iphone */
 @media  screen  and (min-width: 320px) and (max-width: 767px)  {
 
 	body{width: 100%;height: 100%;}
 	header .bottomline{background-color: #EEA9B8;}
-	section{width: 100%;height: 540px;background: url(images/homeimg/contactbgimg.jpg) repeat center top;}
+	section{width: 100%;height: 540px;background: url(../images/homeimg/contactbgimg.jpg) repeat center top;}
 	section .box{width: 100%;height: 100%;background-color: rgba(33,33,33,0.8);padding-top: 20%;}
 	section .box > div{margin: 0 auto;width: 70%;height: 70%;text-align: center;}
 	section .box > div > div{border-top: 2px solid #f10180;display: inline-block;width: 4rem;height: 2rem;margin-bottom: 2rem;}
@@ -21,7 +16,7 @@
 
 	body{width: 100%;height: 100%;}
 	header .bottomline{border-bottom: 3px solid #EEA9B8;}
-	section{width: 100%;height: 800px;background: url(images/homeimg/contactbgimg.jpg) repeat center top;}
+	section{width: 100%;height: 800px;background: url(../images/homeimg/contactbgimg.jpg) repeat center top;}
 	section .box{width: 100%;height: 100%;background-color: rgba(33,33,33,0.8);padding-top: 20%;}
 	section .box > div{margin: 0 auto;width: 60%;height: 70%;text-align: center;}
 	section .box > div > div{border-top: 2px solid #f10180;display: inline-block;width: 4rem;height: 2rem;margin-bottom: 2rem;}
@@ -32,10 +27,19 @@
 /*大于1024px*/
 @media  screen  and (min-width: 1024px)  {
 	header .bottomline{border-bottom: 3px solid #EEA9B8;}	
-	section{width: 100%;height: 700px;background: url(images/homeimg/contactbgimg.jpg) repeat top;}
+	section{width: 100%;height: 700px;background: url(../images/homeimg/contactbgimg.jpg) repeat top;}
 	section .box{width: 100%;height: 100%;background-color: rgba(33,33,33,0.8);padding-top: 10%;}
 	section .box > div{margin-left: 22%;width: 32%;height: 70%;text-align: center;}
 	section .box > div > div{border-top: 2px solid #f10180;display: inline-block;width: 4rem;height: 2rem;margin-bottom: 2rem;}
 	section .box h3{color: #f10180;font-weight: bold;}
 	section .box p{color: white;font-size: 1.4rem;text-align: left;text-indent: 2.8rem;letter-spacing: 0.3rem;line-height: 2rem;}
+}
+
+/* IE6-8 */
+@media \0screen\,screen\9{
+	
+}
+/* IE9-10*/
+@media screen and (min-width:0\0) {
+
 }

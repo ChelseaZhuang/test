@@ -3,13 +3,13 @@
 
 	body{width: 100%;height: 100%;}
 	header .bottomline{background-color: #EEA9B8;}	
-    .banner{width: 100%;height: 150px;background:url(images/homeimg/sectionbgimg3.jpg) no-repeat top center;background-size: 100%;}
+    .banner{width: 100%;height: 150px;background:url(../images/homeimg/sectionbgimg3.jpg) no-repeat top center;background-size: 100%;}
     section{width: 100%;height: auto;margin-top: 5%;text-align: center;}
     section h2{color: #f10180;}
     section hr{border: 1px solid gray;}
     section .content{width: 100%;height: 100%;margin: 0 auto;overflow: hidden;}
     section .content > div{width: 100%;height: 170px;margin-bottom: 5%;margin-top: -1rem;}
-    section .content > div > a{float: left;display: inline;width: 43%;height: 100%;margin-right: 2.2%;margin-top: 2rem;}
+    section .content > div > a{float: left;width: 43%;height: 100%;margin-right: 2.2%;margin-top: 2rem;}
     section .content > div > a > img{width: 100%;height: 100%;}
 }
 
@@ -18,26 +18,26 @@
 
 	body{width: 100%;height: 100%;}
 	header .bottomline{border-bottom: 3px solid #EEA9B8;}	
-    .banner{width: 100%;height: 400px;background:url(images/homeimg/sectionbgimg3.jpg) no-repeat top center;background-size: 100%;}
+    .banner{width: 100%;height: 400px;background:url(../images/homeimg/sectionbgimg3.jpg) no-repeat top center;background-size: 100%;}
     section{width: 100%;height: auto;margin-top: 5%;text-align: center;}
     section h2{color: #f10180;}
     section hr{border: 1px solid gray;}
     section .content{width: 90%;height: 100%;margin: 0 auto;overflow: hidden;}
     section .content > div{width: 100%;height:150px;margin-bottom: 5%;}
-    section .content > div > a{float: left;display: inline;width: 20%;height: 100%;margin-left: 3.5%;}
+    section .content > div > a{float: left;width: 20%;height: 100%;margin-left: 3.5%;}
     section .content > div > a > img{width: 100%;height: 100%;}
 }
 
 /*大于1024px*/
 @media  screen  and (min-width: 1024px)  {	
 	header .bottomline{border-bottom: 3px solid #EEA9B8;}	
-    .banner{width: 100%;height: 500px;background:url(images/homeimg/sectionbgimg3.jpg) no-repeat top center;}
+    .banner{width: 100%;height: 500px;background:url(../images/homeimg/sectionbgimg3.jpg) no-repeat top center;}
     section{width: 100%;height: auto;margin-top: 5%;text-align: center;}
     section h2{color: #f10180;}
     section hr{border: 1px solid gray;}
     section .content{width: 1280px;height: 100%;margin: 0 auto;margin-top: 10%;overflow: hidden;}
     section .content > div{width: 100%;height:266px;margin-bottom: 3%;margin-top: 3%;}
-    section .content > div > a{float: left;display: inline-block;width: 20%;height: 100%;height: 100%;margin-left: 4%;}
-    section .content > div > a:hover{border: 2px solid black；}
+    section .content > div > a{float: left;display:inline-block;zoom:1;*display: inline-block;width: 20%;height: 100%;height: 100%;margin-left: 4%;}
+    section .content > div > a:hover{border: 2px solid black}
     section .content > div > a > img{width: 100%;height: 100%;}
 }
