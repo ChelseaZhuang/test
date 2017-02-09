@@ -17,6 +17,12 @@
 	body {behavior: url("csshover.htc");}
 	</style>
 	<![endif]-->
+
+	<!--[if lt IE 9]>
+		<script src="http://apps.bdimg.com/libs/jquery/1.9.1/jquery.min.js"></script>
+    	<script src="//cdn.bootcss.com/html5shiv/3.7.3/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
 </head>
 
 <body>
@@ -44,8 +50,8 @@
 		<ul>
 			<li><a href="home.html" target="_blank">首页</a></li>
 			<li><a href="about.html" target="_blank">关于我们</a></li>
-			<li><a href="#" class="bottomline" target="_blank">品牌服饰</a></li>
-			<li><a href="hot.html" target="_blank">火爆热销</a></li>
+			<li><a href="#" target="_blank">品牌服饰</a></li>
+			<li><a href="hotclothes.html" class="bottomline" target="_blank">火爆热销</a></li>
 			<li><a href="contact.html" target="_blank">联系我们</a></li>
 		</ul>	
 	</nav>
@@ -60,7 +66,7 @@
 			<h2>毛呢外套/羽绒服</h2>
 			<p>Coats</p>
 			<hr>
-
+			
 			<div class="listchild" style="display: none">
        			<button type="button"><i class="fa fa-times"></i></button>
 				<img src="images/clothes/coats/coat1.png" alt="商品主图">
@@ -98,8 +104,8 @@
 					</tr>
 				</table>
 				<div><img src="images/homeimg/size.jpg" alt="size"></div>
-			</div>
-			
+			</div>	
+
 			<div class="listchild" style="display: none">
        			<button type="button"><i class="fa fa-times"></i></button>
 				<img src="images/clothes/coats/coat2.png" alt="商品主图">
@@ -138,7 +144,7 @@
 				</table>
 				<div><img src="images/homeimg/size.jpg" alt="size"></div>
 			</div>
-			
+
 			<div class="listchild" style="display: none">
        			<button type="button"><i class="fa fa-times"></i></button>
 				<img src="images/clothes/coats/coat3.png" alt="商品主图">
@@ -177,7 +183,7 @@
 				</table>
 				<div><img src="images/homeimg/size.jpg" alt="size"></div>
 			</div>
-			
+
 			<div class="listchild" style="display: none">
        			<button type="button"><i class="fa fa-times"></i></button>
 				<img src="images/clothes/coats/coat4.png" alt="商品主图">
@@ -216,14 +222,14 @@
 				</table>
 				<div><img src="images/homeimg/size.jpg" alt="size"></div>
 			</div>
-			
+
 			<div class="listchild" style="display: none">
        			<button type="button"><i class="fa fa-times"></i></button>
 				<img src="images/clothes/coats/coat5.png" alt="商品主图">
 				<table>
 					<caption>商品标题商品标题商品标题</caption>
 					<tr>
-						<td class="introWord">售价：<span>￥666</span></td>
+						<td class="introWord">售价：<span>￥867</span></td>
 						<td></td>
 						<td></td>
 					</tr>
@@ -255,7 +261,6 @@
 				</table>
 				<div><img src="images/homeimg/size.jpg" alt="size"></div>
 			</div>
-			
 			<div class="listchild" style="display: none">
        			<button type="button"><i class="fa fa-times"></i></button>
 				<img src="images/clothes/coats/coat6.png" alt="商品主图">
@@ -374,28 +379,28 @@
 			</div>
 
 			<div class="listintro">
-				<div class="coat_pic1">
+				<div class="coat_pic1" id="showdiv">
 					<a><img src="images/clothes/coats/coat1.png" alt=""></a><a>商品名称商品名称</a>
 				</div>
-				<div class="coat_pic2">
+				<div class="coat_pic2" id="showdiv">
 					<a><img src="images/clothes/coats/coat2.png" alt=""></a><a>商品名称商品名称</a>
 				</div>
-				<div class="coat_pic3">
+				<div class="coat_pic3" id="showdiv">
 					<a><img src="images/clothes/coats/coat3.png" alt=""></a><a>商品名称商品名称</a>	
 				</div>
-				<div class="coat_pic4">
+				<div class="coat_pic4" id="showdiv">
 					<a><img src="images/clothes/coats/coat4.png" alt=""></a><a>商品名称商品名称</a>
 				</div>
-				<div class="coat_pic5">
+				<div class="coat_pic5" id="showdiv">
 					<a><img src="images/clothes/coats/coat5.png" alt=""></a><a>商品名称商品名称</a>	
 				</div>
-				<div class="coat_pic6">
+				<div class="coat_pic6" id="showdiv">
 					<a><img src="images/clothes/coats/coat6.png" alt=""></a><a>商品名称商品名称</a>	
 				</div>
-				<div class="coat_pic7">
+				<div class="coat_pic7" id="showdiv">
 					<a><img src="images/clothes/coats/coat7.png" alt=""></a><a>商品名称商品名称</a>	
 				</div>
-				<div class="coat_pic8">
+				<div class="coat_pic8" id="showdiv">
 					<a><img src="images/clothes/coats/coat8.png" alt=""></a><a>商品名称商品名称</a>	
 				</div>
 			</div>
@@ -818,7 +823,8 @@
 					</tr>
 				</table>
 				<div><p></p><img src="images/homeimg/size.jpg" alt="size"></div>
-			</div>			<div class="listchild" style="display: none;;">
+			</div>			
+			<div class="listchild" style="display: none;;">
        			<button type="button"><i class="fa fa-times"></i></button>
 				<img src="images/clothes/bags/bag3.png" alt="商品主图">
 				<table>
@@ -855,7 +861,8 @@
 					</tr>
 				</table>
 				<div><p></p><img src="images/homeimg/size.jpg" alt="size"></div>
-			</div>			<div class="listchild" style="display: none;;">
+			</div>			
+			<div class="listchild" style="display: none;;">
        			<button type="button"><i class="fa fa-times"></i></button>
 				<img src="images/clothes/bags/bag4.png" alt="商品主图">
 				<table>
@@ -892,7 +899,8 @@
 					</tr>
 				</table>
 				<div><p></p><img src="images/homeimg/size.jpg" alt="size"></div>
-			</div>			<div class="listchild" style="display: none;;">
+			</div>			
+			<div class="listchild" style="display: none;;">
        			<button type="button"><i class="fa fa-times"></i></button>
 				<img src="images/clothes/bags/bag5.png" alt="商品主图">
 				<table>
@@ -929,7 +937,8 @@
 					</tr>
 				</table>
 				<div><p></p><img src="images/homeimg/size.jpg" alt="size"></div>
-			</div>			<div class="listchild" style="display: none;;">
+			</div>			
+			<div class="listchild" style="display: none;;">
        			<button type="button"><i class="fa fa-times"></i></button>
 				<img src="images/clothes/bags/bag6.png" alt="商品主图">
 				<table>
@@ -966,7 +975,8 @@
 					</tr>
 				</table>
 				<div><p></p><img src="images/homeimg/size.jpg" alt="size"></div>
-			</div>			<div class="listchild" style="display: none;;">
+			</div>			
+			<div class="listchild" style="display: none;;">
        			<button type="button"><i class="fa fa-times"></i></button>
 				<img src="images/clothes/bags/bag7.png" alt="商品主图">
 				<table>
@@ -1003,7 +1013,8 @@
 					</tr>
 				</table>
 				<div><p></p><img src="images/homeimg/size.jpg" alt="size"></div>
-			</div>			<div class="listchild" style="display: none;;">
+			</div>			
+			<div class="listchild" style="display: none;;">
        			<button type="button"><i class="fa fa-times"></i></button>
 				<img src="images/clothes/bags/bag8.png" alt="商品主图">
 				<table>
@@ -1111,7 +1122,8 @@
 					</tr>
 				</table>
 				<div><p></p><img src="images/homeimg/size.jpg" alt="size"></div>
-			</div>			<div class="listchild" style="display: none;">
+			</div>			
+			<div class="listchild" style="display: none;">
        			<button type="button"><i class="fa fa-times"></i></button>
 				<img src="images/clothes/makeup/makeup2.png" alt="商品主图">
 				<table>
@@ -1148,7 +1160,8 @@
 					</tr>
 				</table>
 				<div><p></p><img src="images/homeimg/size.jpg" alt="size"></div>
-			</div>			<div class="listchild" style="display: none;">
+			</div>			
+			<div class="listchild" style="display: none;">
        			<button type="button"><i class="fa fa-times"></i></button>
 				<img src="images/clothes/makeup/makeup3.png" alt="商品主图">
 				<table>
@@ -1185,7 +1198,8 @@
 					</tr>
 				</table>
 				<div><p></p><img src="images/homeimg/size.jpg" alt="size"></div>
-			</div>			<div class="listchild" style="display: none;">
+			</div>			
+			<div class="listchild" style="display: none;">
        			<button type="button"><i class="fa fa-times"></i></button>
 				<img src="images/clothes/makeup/makeup4.png" alt="商品主图">
 				<table>
@@ -1222,7 +1236,8 @@
 					</tr>
 				</table>
 				<div><p></p><img src="images/homeimg/size.jpg" alt="size"></div>
-			</div>			<div class="listchild" style="display: none;">
+			</div>			
+			<div class="listchild" style="display: none;">
        			<button type="button"><i class="fa fa-times"></i></button>
 				<img src="images/clothes/makeup/makeup5.png" alt="商品主图">
 				<table>
@@ -1259,7 +1274,8 @@
 					</tr>
 				</table>
 				<div><p></p><img src="images/homeimg/size.jpg" alt="size"></div>
-			</div>			<div class="listchild" style="display: none;">
+			</div>			
+			<div class="listchild" style="display: none;">
        			<button type="button"><i class="fa fa-times"></i></button>
 				<img src="images/clothes/makeup/makeup6.png" alt="商品主图">
 				<table>
@@ -1296,7 +1312,8 @@
 					</tr>
 				</table>
 				<div><p></p><img src="images/homeimg/size.jpg" alt="size"></div>
-			</div>			<div class="listchild" style="display: none;">
+			</div>			
+			<div class="listchild" style="display: none;">
        			<button type="button"><i class="fa fa-times"></i></button>
 				<img src="images/clothes/makeup/makeup7.png" alt="商品主图">
 				<table>
@@ -1392,11 +1409,6 @@
 	<script src="js/jquery.min.js"></script> <!-- jquery -->
 	<script src="js/fixed.js"></script> <!-- fixednav箭头滚到顶部-->
 	<script src="js/bootstrap.min.js"></script> <!-- bootstrap -->
-	<!--[if lt IE 9]>
-		<script src="jquery-2.1.4/html5.js"></script> 
-    	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
     <script>
     $(document).ready(function(){
     	$(".listchild button").click(function(){
@@ -1533,10 +1545,6 @@
     	$(".makeup_pic8").click(function(){
     		$(this).parent().hide("fast");
     		$(".makeup > div").eq(7).show("slow");
-   		});
-	    	$(".makeup_pic8").click(function(){
-    		$(this).parent().hide("fast");
-    		$(".makeup > div").eq(7).show("slow");
    		});	
     	$(".makeup_pic9").click(function(){
     		$(this).parent().hide("fast");
@@ -1553,7 +1561,7 @@
     	$(".makeup_pic12").click(function(){
     		$(this).parent().hide("fast");
     		$(".makeup > div").eq(11).show("slow");
-   		});						//makeup
+   		});							   				//makeup
     })
     </script>
 </body>

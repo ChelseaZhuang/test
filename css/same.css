@@ -5,12 +5,51 @@
 	-ms-box-sizing: border-box;
 	box-sizing: border-box;}
  	body{font-size: 62.5%;font-family: "微软雅黑";}
- 	a{text-decoration: none;}
+ 	body a{text-decoration: none;}
  	body a:hover{text-decoration: none;}
  	body a:active{color: #EE30A7;}
 	li{list-style-type: none;}
 	img{border: 0;max-width: 100%;width: auto;}
-	header,footer,article,aside,section,nav{display:block} /* 支持HTML5 */
+	header,footer,article,aside,section,nav{display:block}  /* 支持HTML5标签 */
+
+/* IE6/7/8 */
+@media \0screen\,screen\9{
+	/*header*/ 
+ 	header{overflow: hidden;width: 100%;height: 100px;}
+ 	header > div{width: 75%;height: 60%;margin: 0 auto;line-height: 60px;}
+ 	header > div > div:first-child{float: left;display: inline;width: 20%;height: 100%;color: gray;}
+ 	header > div > div:last-child{float: right;display: inline;overflow: hidden;width: 400px;height: 100%;font-weight: bold;font-size: 10px;}
+ 	header > div > div:last-child span{display: inline-block;font-size: 1.6rem;line-height: 6rem;margin-right: 2rem;}
+ 	header > div > div:last-child i{display: inline-block;margin-left: 1rem;color: black;font-size: 2rem;}
+ 	header > div > div:last-child i:hover{color: gray;}
+ 	header nav{width: 100%;height: 40%;background-color: #f10180;}
+ 	header ul{width: 70%;height: 100%;margin: 0 auto;line-height: 40px;}
+ 	header ul li{float: left;display: inline;width: 10%;height: 100%;}
+ 	header nav a{display: inline;display: block;width: 100%;height: 100%;text-align: center;color: white;font-weight: bold;font-size: 16px;}
+ 	header nav a:hover{color: #FFC0CB;}
+	/*footer*/
+	footer{width: 100%;height: auto;padding-top: 20px;padding-bottom: 10px;background-color: #C4C4C4;color: black;text-align: center;}
+	footer > div:first-child{width: 100%;height: auto;margin: 0 auto 30px;}
+	footer ul{width: 100%;margin: 0 auto;}
+	footer li{margin-bottom: 8px;color: black;font-size: 14px;}
+	footer a{color: black;font-size: 14px;}
+	footer a:hover{color: #EE1289;}
+	footer > div:last-child{width: 100%;margin-top: 20px;font-size: 12px;}
+	/*fixednav*/
+	#fixednav{position: fixed;right: 0;top: 42%;width: 4%;height: 24%;background-color: #f10180;
+	z-index: 999;
+	-moz-z-index: 999;
+	-webkit-z-index: 999;
+	-o-z-index: 999;
+	-ms-z-index: 999;
+	-khtml-z-index: 999;}
+	#fixednav a{display: block;width: 100%;height: 25%;text-align: center;color: white;line-height: 45px;font-size: 26px;cursor: hand;}
+	#fixednav a:hover{color: #FFC0CB;}
+	#fixednav .fixednav1{top: 42%;width: 120px;}
+	#fixednav .fixednav2{position: fixed;display: block;right: 4%;top: 47%;padding: 20px;height: auto;}
+	#fixednav .fixednav3{top: 54%;width: 160px;}
+	#fixednav .fixednav3,#fixednav .fixednav1{position: fixed;display: block;right: 6%;height: auto;padding: 10px;font-weight: bold;color: #EE1289;border: 4px solid #878787;font-size: 18px;}
+}
 
 /* iphone */
 @media  screen  and (min-width: 320px) and (max-width: 767px)  {
@@ -21,7 +60,7 @@
  	header > div > div:first-child{width: 100%;height: auto;}
  	header > div > div:last-child{width: 100%;height: auto;font-weight: bold;font-size: 1.2rem;}
 	header > div > div:last-child span{float: left;display: inline-block;width: 45%;height: auto;color: #4F4F4F;font-size: 1.2rem;}
- 	header > div > div:last-child a{float: right;width: 15%;display: inline-block;height: auto;margin-right: 2%;}
+ 	header > div > div:last-child a{float: right;display: inline-block;width: 15%;height: auto;margin-right: 2%;}
  	header > div > div:last-child a > i{display: inline-block;width: 100%;height: 100%;padding: 1rem;color: #292929;border: 1px solid #292929;font-size: 2rem;}
  	header nav{clear: both;width: 100%;height: 40px;line-height: 40px;background-color: #f10180;}
  	header ul{width: 100%;height: 100%;text-align: center;}
@@ -41,12 +80,12 @@
 	#fixednav .fixednav3{top: 82%;width: 45%;}
 	#fixednav .fixednav3,#fixednav .fixednav1{position: fixed;display: block;right: 12%;padding: 1rem;font-weight: bold;color: white;background-color: #292929;font-size: 2rem;}
 	/*footer*/
-	footer{width: 100%;height: 20%;background-color: #C4C4C4;padding-top: 20px;padding-bottom: 2%;}
-	footer > div:first-child{width: 100%;height: auto;margin: 0 auto;margin-bottom: 1rem;text-align: center;}
-	footer ul{width: 100%;margin: 0 auto;text-align: center;}
+	footer{width: 100%;height: 20%;background-color: #C4C4C4;padding-top: 20px;padding-bottom: 2%;text-align: center;}
+	footer > div:first-child{width: 100%;height: auto;margin: 0 auto;margin-bottom: 1rem;}
+	footer ul{width: 100%;margin: 0 auto;}
 	footer li{margin-bottom: 0.8rem;color: black;font-size: 1.4rem;}
 	footer a{color: black;text-decoration: underline;color: #f10180;font-size: 1.4rem;}
-	footer > div:last-child{clear: both;margin: 0 auto;width: 100%;color: black;margin-top: 5%;text-align: center;font-size: 1.2rem;}
+	footer > div:last-child{margin: 0 auto;width: 100%;color: black;margin-top: 5%;font-size: 1.2rem;}
 }
 
 /* iPad */
@@ -76,26 +115,26 @@
 	#fixednav .fixednav3{top: 52%;width: 170px;}
 	#fixednav .fixednav3,#fixednav .fixednav1{position: fixed;display: block;right: 10%;padding: 1rem;font-weight: bold;color: black;border: 4px solid #f10180;font-size: 1.8rem;}
 	/*footer*/
-	footer{width: 100%;height: 20%;padding-top: 20px;padding-bottom: 2%;background-color: #C4C4C4;}
-	footer > div:first-child{width: 100%;height: auto;margin: 0 auto;margin-bottom: 1rem;text-align: center;}
-	footer ul{width: 100%;margin: 0 auto;text-align: center;}
+	footer{width: 100%;height: 20%;padding-top: 20px;padding-bottom: 2%;background-color: #C4C4C4;text-align: center;}
+	footer > div:first-child{width: 100%;height: auto;margin: 0 auto;margin-bottom: 1rem;}
+	footer ul{width: 100%;margin: 0 auto;}
 	footer li{width: 100%;height: 100%;margin-bottom: 0.8rem;color: black;font-size: 1.4rem;}
 	footer a{display: inline-block;width: 100%;height: 100%;color: black;text-decoration: underline;color: #f10180;font-size: 1.4rem;}
-	footer > div:last-child{clear: both;width: 100%;margin: 5% auto 0;color: black;text-align: center;font-size: 1.2rem;}
+	footer > div:last-child{width: 100%;margin: 5% auto 0;color: black;font-size: 1.2rem;}
 }
 
 /*大于1024px*/
 @media  screen  and (min-width: 1024px)  {
 	/*header*/ 
  	header{overflow: hidden;width: 100%;height: 100px;}
- 	header > div{width: 75%;height: 60%;margin: 0 auto;line-height: 3rem;}
- 	header > div > div:first-child{float: left;display:inline-block;zoom:1;*display: inline-block;width: 20%;height: 100%;color: ;}
+ 	header > div{width: 75%;height: 60%;margin: 0 auto;line-height: 30px;}
+ 	header > div > div:first-child{float: left;display:inline-block;zoom:1;*display: inline-block;width: 20%;height: 100%;color: gray;}
  	header > div > div:last-child{float: right;display:inline-block;zoom:1;*display: inline-block;overflow: hidden;width: 400px;height: 100%;font-weight: bold;font-size: 1.2rem;}
- 	header > div > div:last-child span{display: inline-block;font-size: 1.6rem;line-height: 6rem;margin-right: 2rem;}
+ 	header > div > div:last-child span{display: inline-block;font-size: 1.6rem;line-height: 60px;margin-right: 2rem;}
  	header > div > div:last-child i{display: inline-block;margin-left: 1rem;color: black;font-size: 2rem;}
  	header > div > div:last-child i:hover{color: gray;}
  	header nav{width: 100%;height: 40%;background-color: #f10180;}
- 	header ul{width: 70%;height: 100%;margin: 0 auto;line-height: 3.6rem;}
+ 	header ul{width: 70%;height: 100%;margin: 0 auto;line-height: 40px;}
  	header ul li{float: left;display:inline-block;zoom:1;*display: inline-block;width: 10%;height: 100%;}
  	header nav a{display: inline-block;width: 100%;height: 100%;text-align: center;color: white;font-weight: bold;font-size: 1.6rem;}
  	header nav a:hover{color: #FFC0CB;}
@@ -106,7 +145,7 @@
 	footer li{margin-bottom: 0.8rem;color: black;font-size: 1.4rem;}
 	footer a{color: black;font-size: 1.4rem;}
 	footer a:hover{color: #EE1289;}
-	footer > div:last-child{clear: both;width: 100%;margin-top: 2rem;text-align: center;font-size: 1.2rem;}
+	footer > div:last-child{width: 100%;margin-top: 2rem;text-align: center;font-size: 1.2rem;}
 	/*fixednav*/
 	#fixednav{position: fixed;right: 0;top: 42%;width: 4%;height: 24%;background-color: #f10180;
 	z-index: 999;
@@ -115,7 +154,7 @@
 	-o-z-index: 999;
 	-ms-z-index: 999;
 	-khtml-z-index: 999;}
-	#fixednav a{display: block;width: 100%;height: 25%;text-align: center;color: white;line-height: 4.5rem;font-size: 2.6rem;cursor: pointer;}
+	#fixednav a{display: block;width: 100%;height: 25%;text-align: center;color: white;line-height: 45px;font-size: 2.6rem;cursor: pointer;cursor: hand/9;}
 	#fixednav a:hover{color: #FFC0CB;}
 	#fixednav .fixednav1{top: 42%;width: 120px;}
 	#fixednav .fixednav2{position: fixed;display: block;right: 4%;top: 47%;padding: 2rem;height: auto;}

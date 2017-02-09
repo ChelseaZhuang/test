@@ -3,9 +3,9 @@ $(document).ready(function(){
 	$('#arrowTop').click(function(){ 
 		$('html, body').animate({
 			scrollTop: 0
-			}, 400); 
+		}, 400); 
 		return false; 
-		}); 
+	}); 
 	$("#fixednav1").mouseenter(function(){
 		$(this).next().show(600);
 	});
