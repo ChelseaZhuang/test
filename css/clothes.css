@@ -1,7 +1,7 @@
 /* IE6/7/8 */
 @media \0screen\,screen\9{
 	header .bottomline{border-bottom: 3px solid #EEA9B8;}	
-    .banner{width: 100%;height: 500px;background:url(../images/homeimg/sectionbgimg.jpg) no-repeat top center;}
+    	.banner{width: 100%;height: 500px;background:url(../images/homeimg/sectionbgimg.jpg) no-repeat top center;}
  	section{width: 100%;height: auto;clear: both;}
 		.content{width: 65%;height: auto;margin: 2.5% auto;overflow: hidden;}
 		.content > div{width: 100%;height: auto;text-align: center;padding: 5% 0;margin-top: 5%;}
@@ -44,7 +44,7 @@
 @media  screen  and (min-width: 320px) and (max-width: 767px)  {
 	body{width: 100%;height: 100%;}
 	header .bottomline{background-color: #EEA9B8;}	
-    .banner{width: 100%;height: 150px;background:url(../images/homeimg/sectionbgimg.jpg) no-repeat top center;background-size: 100%;}
+       .banner{width: 100%;height: 150px;background:url(../images/homeimg/sectionbgimg.jpg) no-repeat top center;background-size: 100%;}
  	section{width: 100%;height: auto;}
 		.content{width: 95%;height: auto;overflow: hidden;margin: 0 auto;}
 		.content > div{width: 100%;height: auto;text-align: center;padding: 5% 0;margin-top: 5%;}
@@ -70,7 +70,7 @@
 @media  screen  and (min-width: 768px) and (max-width: 1023px){
 	body{width: 100%;height: 100%;}
 	header .bottomline{border-bottom: 3px solid #EEA9B8;}	
-    .banner{width: 100%;height: 400px;background:url(../images/homeimg/sectionbgimg.jpg) no-repeat top center;background-size: 100%;}
+  	.banner{width: 100%;height: 400px;background:url(../images/homeimg/sectionbgimg.jpg) no-repeat top center;background-size: 100%;}
  	section{width: 100%;height: auto;}
 		.content{width: 95%;height: auto;overflow: hidden;margin: 0 auto;}
 		.content > div{width: 100%;height: auto;text-align: center;padding: 5% 0;margin-top: 5%;}
@@ -95,7 +95,7 @@
 /*大于1024px*/
 @media  screen  and (min-width: 1024px)  {	
 	header .bottomline{border-bottom: 3px solid #EEA9B8;}	
-    .banner{width: 100%;height: 500px;background:url(../images/homeimg/sectionbgimg.jpg) no-repeat top center;}
+        .banner{width: 100%;height: 500px;background:url(../images/homeimg/sectionbgimg.jpg) no-repeat top center;}
  	section{width: 100%;height: auto;}
 		.content{width: 65%;height: auto;margin: 2.5% auto;overflow: hidden;}
 		.content > div{width: 100%;height: auto;text-align: center;padding: 5% 0;margin-top: 5%;}
