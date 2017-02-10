@@ -17,15 +17,17 @@
 	/*header*/ 
  	header{overflow: hidden;width: 100%;height: 100px;}
  	header > div{width: 75%;height: 60%;margin: 0 auto;line-height: 60px;}
+
  	header > div > div:first-child{float: left;display: inline;width: 20%;height: 100%;color: gray;}
- 	header > div > div:last-child{float: right;display: inline;overflow: hidden;width: 400px;height: 100%;font-weight: bold;font-size: 10px;}
- 	header > div > div:last-child span{display: inline-block;font-size: 1.6rem;line-height: 6rem;margin-right: 2rem;}
- 	header > div > div:last-child i{display: inline-block;margin-left: 1rem;color: black;font-size: 2rem;}
+ 	header > div > div:last-child{float: left;display: inline;overflow: hidden;width: 40%;height: 100%;font-weight: bold;font-size: 10px;}
+
+ 	header > div > div:last-child span{display: inline-block;font-size: 16em;line-height: 60em;margin-right: 20em;}
+ 	header > div > div:last-child i{display: inline-block;margin-left: 10em;color: black;font-size: 20em;}
  	header > div > div:last-child i:hover{color: gray;}
  	header nav{width: 100%;height: 40%;background-color: #f10180;}
  	header ul{width: 70%;height: 100%;margin: 0 auto;line-height: 40px;}
  	header ul li{float: left;display: inline;width: 10%;height: 100%;}
- 	header nav a{display: inline;display: block;width: 100%;height: 100%;text-align: center;color: white;font-weight: bold;font-size: 16px;}
+ 	header nav a{display: inline-block;width: 100%;height: 100%;text-align: center;color: white;font-weight: bold;font-size: 16px;}
  	header nav a:hover{color: #FFC0CB;}
 	/*footer*/
 	footer{width: 100%;height: auto;padding-top: 20px;padding-bottom: 10px;background-color: #C4C4C4;color: black;text-align: center;}
@@ -36,13 +38,7 @@
 	footer a:hover{color: #EE1289;}
 	footer > div:last-child{width: 100%;margin-top: 20px;font-size: 12px;}
 	/*fixednav*/
-	#fixednav{position: fixed;right: 0;top: 42%;width: 4%;height: 24%;background-color: #f10180;
-	z-index: 999;
-	-moz-z-index: 999;
-	-webkit-z-index: 999;
-	-o-z-index: 999;
-	-ms-z-index: 999;
-	-khtml-z-index: 999;}
+	#fixednav{position: fixed;right: 0;top: 42%;width: 4%;height: 24%;background-color: #f10180;z-index: 999;}
 	#fixednav a{display: block;width: 100%;height: 25%;text-align: center;color: white;line-height: 45px;font-size: 26px;cursor: hand;}
 	#fixednav a:hover{color: #FFC0CB;}
 	#fixednav .fixednav1{top: 42%;width: 120px;}
@@ -57,12 +53,19 @@
 	/*header*/
  	header{position: relative;width: 100%;height: 10%;overflow: hidden;margin-top: 1rem;}
  	header > div{width: 100%;height: auto;margin-bottom: 4rem;text-align: center;color: #3D3D3D;}
+ 	header > div:first-child{margin-top: 40px;}
  	header > div > div:first-child{width: 100%;height: auto;}
  	header > div > div:last-child{width: 100%;height: auto;font-weight: bold;font-size: 1.2rem;}
 	header > div > div:last-child span{float: left;display: inline-block;width: 45%;height: auto;color: #4F4F4F;font-size: 1.2rem;}
  	header > div > div:last-child a{float: right;display: inline-block;width: 15%;height: auto;margin-right: 2%;}
  	header > div > div:last-child a > i{display: inline-block;width: 100%;height: 100%;padding: 1rem;color: #292929;border: 1px solid #292929;font-size: 2rem;}
- 	header nav{clear: both;width: 100%;height: 40px;line-height: 40px;background-color: #f10180;}
+ 	header nav{position: fixed;top: 0;clear: both;width: 100%;height: 40px;line-height: 40px;background-color: #f10180;
+ 	z-index: 99999;
+ 	-moz-z-index: 99999;
+	-webkit-z-index: 99999;
+	-o-z-index: 99999;
+	-ms-z-index: 99999;
+	-khtml-z-index: 99999;}
  	header ul{width: 100%;height: 100%;text-align: center;}
  	header ul li{float: left;width: 20%;height: 100%;}
  	header nav a{display: inline-block;width: 100%;height: 100%;text-align: center;color: white;font-weight: bold;font-size: 1.4rem;}
@@ -97,9 +100,9 @@
  	header > div > div:first-child{width: 100%;height: 30%;margin-bottom: 2rem;margin-top: 2rem;}
  	header > div > div:last-child{width: 100%;height: 30%;font-weight: bold;font-size: 2.6rem;}
  	header > div > div:last-child i{display: inline-block;margin-left: 1rem;color: #292929;font-size: 2.2rem;border: 1px solid #292929; padding: 1.4rem;}
- 	header nav{width: 100%;height: 60px;line-height: 4.6rem;background-color: #f10180;}
+ 	header nav{width: 100%;height: 60px;line-height: 58px;background-color: #f10180;}
  	header ul{width: 100%;height: 100%;text-align: center;margin-top: 2rem;}
- 	header ul li{float: left;display:inline-block;zoom:1;*display: inline-block;width: 20%;height: 100%;}
+ 	header ul li{float: left;display:inline-block;width: 20%;height: 100%;}
  	header nav a{display: inline-block;width: 100%;height: 100%;text-align: center;color: white;font-weight: bold;font-size: 2rem;}
 	/*fixednav*/
 	#fixednav{position: fixed;right: 0;top: 40%;width: 10%;height: 24%;background-color: #f10180;
@@ -109,8 +112,8 @@
 	-o-z-index: 999;
 	-ms-z-index: 999;
 	-khtml-z-index: 999;}
-	#fixednav a{display: block;width: 100%;height: 25%;line-height: 4.5rem;text-align: center;color: white;}
-	#fixednav .fixednav1{top: 38%;width: 140px;}
+	#fixednav a{display: block;width: 100%;height: 25%;line-height: 70px;text-align: center;color: white;}
+	#fixednav .fixednav1{top: 40%;width: 140px;}
 	#fixednav .fixednav2{position: fixed;display: block;right: 10%;top: 45%;padding: 2rem;}
 	#fixednav .fixednav3{top: 52%;width: 170px;}
 	#fixednav .fixednav3,#fixednav .fixednav1{position: fixed;display: block;right: 10%;padding: 1rem;font-weight: bold;color: black;border: 4px solid #f10180;font-size: 1.8rem;}
@@ -128,8 +131,8 @@
 	/*header*/ 
  	header{overflow: hidden;width: 100%;height: 100px;}
  	header > div{width: 75%;height: 60%;margin: 0 auto;line-height: 30px;}
- 	header > div > div:first-child{float: left;display:inline-block;zoom:1;*display: inline-block;width: 20%;height: 100%;color: gray;}
- 	header > div > div:last-child{float: right;display:inline-block;zoom:1;*display: inline-block;overflow: hidden;width: 400px;height: 100%;font-weight: bold;font-size: 1.2rem;}
+ 	header > div > div:first-child{float: left;display:inline-block;width: 20%;height: 100%;color: gray;}
+ 	header > div > div:last-child{float: right;display:inline-block;overflow: hidden;width: 400px;height: 100%;font-weight: bold;font-size: 1.2rem;}
  	header > div > div:last-child span{display: inline-block;font-size: 1.6rem;line-height: 60px;margin-right: 2rem;}
  	header > div > div:last-child i{display: inline-block;margin-left: 1rem;color: black;font-size: 2rem;}
  	header > div > div:last-child i:hover{color: gray;}
