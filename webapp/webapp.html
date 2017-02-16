@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Demo</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.css"><!-- 引入 jQuery Mobile 样式 -->
+<link rel="stylesheet" href="./css/main.css">
+<link rel="stylesheet" href="./css/swiper-3.4.1.min.css">
+<script type="text/javascript" src="./js/iscroll.js"></script>
+
+<script type="text/javascript">
+
+var myScroll;
+
+function loaded () {
+	myScroll = new IScroll('#wrapper', { eventPassthrough: true, scrollX: true, scrollY: false, preventDefault: false });
+}
+
+</script>
+
+</head>
+
+<body onload="loaded()">
+<div data-role="page" id="mainpage1">
+	<!--head-->
+	<div data-role="header" data-position="fixed" data-theme="a">  <!--fixed-->
+		<h3>Shop</h3>
+		<input data-type="search" name="search" data-icon="search" placeholder="搜索商品，共2944款好物">
+
+
+	<div id="wrapper">
+		<!-- 导航栏 -->
+		<div id="scroller">
+			<ul>
+				<li class="underline"><a href="" class="check">推荐</a></li>
+				<li><a href="" id="">居家</a></li>
+				<li><a href="">餐厨</a></li>
+				<li><a href="">配件</a></li>
+				<li><a href="">服装</a></li>
+				<li><a href="" id="">居家</a></li>
+				<li><a href="">餐厨</a></li>
+				<li><a href="">配件</a></li>
+				<li><a href="">服装</a></li>
+				<li><a href="" id="">居家</a></li>
+				<li><a href="">餐厨</a></li>
+				<li><a href="">配件</a></li>
+				<li><a href="">服装</a></li>
+			</ul>	
+		</div>
+		<!--end 导航栏-->
+	</div>
+
+	</div> 	
+	<!--end head-->
+
+	
+	<!--content-->
+	<div data-role="main" class="ui-content" id="a_content">
+		<!-- 轮播 -->
+		<div class="swiper-container">  
+    		<div class="swiper-wrapper">
+      			<div class="swiper-slide"><a href="cooktool.html" target="_blank"><img src="./image/swiper/pic1.png" alt="包包主题" /></a></div>
+      	  		<div class="swiper-slide"><a href="something.html" target="_blank"><img src="./image/swiper/pic2.png" alt="办公主题" /></a></div>
+      	 		<div class="swiper-slide"><a href="coat.html" target="_blank"><img src="./image/swiper/pic3.png" alt="衣物主题" /></a></div>
+    		</div>
+			<div class="swiper-pagination"></div>
+		</div>
+		<!-- end 轮播 -->
+
+		<div class="service">
+			<ul class="ui-grid-b">
+				<li class="ui-block-a"><a href="">网易自营品牌</a></li>
+				<li class="ui-block-b"><a href="">80天无忧退货</a></li>
+				<li class="ui-block-c"><a href="">48小时快速退款</a></li>
+			</ul>
+		</div>
+
+		<div class="contentpic marginbottom">
+			<a href="#" class="block">品牌制造商直供&nbsp;&nbsp;></a>
+			<div class="topdiv">
+				<div>
+					<a href=""><img src="./image/xiangzi.png"></a>
+					<a href=""><img src="./image/shui.png"></a>
+				</div>
+				<div><a href=""><img src="./image/chuang.png"></a></div>
+			</div>
+		</div>
+
+		<div class="contentpic marginbottom">
+			<a href="#" class="block">周一周四&nbsp;·&nbsp;新品首发&nbsp;&nbsp;></a>
+			<ul>
+				<li><a href=""><img src="./image/weijin.png"><p>经典纯色围巾</p><p class="price">￥109</p></a></li>
+				<li><a href=""><img src="./image/weijin.png"><p>经典纯色围巾</p><p class="price">￥109</p></a></li>
+				<li><a href=""><img src="./image/weijin.png"><p>经典纯色围巾</p><p class="price">￥109</p></a></li>
+				<li><a href=""><img src="./image/weijin.png"><p>经典纯色围巾</p><p class="price">￥109</p></a></li>
+			</ul>
+		</div>
+
+		<div class="contentpic contentpic3">
+			<a href="#" class="block">居家好物</a>
+			<ul>
+				<li><a href=""><img src="./image/haowu1.png"><p>纯棉水洗枕头</p><p class="price">￥111</p></a></li>
+				<li><a href=""><img src="./image/haowu1.png"><p>纯棉水洗枕头</p><p class="price">￥111</p></a></li>
+				<li><a href=""><img src="./image/haowu1.png"><p>纯棉水洗枕头</p><p class="price">￥111</p></a></li>
+				<li><a href=""><img src="./image/haowu1.png"><p>纯棉水洗枕头</p><p class="price">￥111</p></a></li>
+				<li><a href=""><img src="./image/haowu1.png"><p>纯棉水洗枕头</p><p class="price">￥111</p></a></li>
+				<li class="more"><a href=""><p>更多居家好物</p><p></p><p></p></a></li>
+			</ul>
+		</div>
+
+		<div class="contentpic contentpic3">
+			<a href="#" class="block">服装好物</a>
+			<ul>
+				<li><a href=""><img src="./image/haowu2.png"><p>棉花纯色上衣</p><p class="price">￥255</p></a></li>
+				<li><a href=""><img src="./image/haowu2.png"><p>棉花纯色上衣</p><p class="price">￥255</p></a></li>
+				<li><a href=""><img src="./image/haowu2.png"><p>棉花纯色上衣</p><p class="price">￥255</p></a></li>
+				<li><a href=""><img src="./image/haowu2.png"><p>棉花纯色上衣</p><p class="price">￥255</p></a></li>
+				<li><a href=""><img src="./image/haowu2.png"><p>棉花纯色上衣</p><p class="price">￥255</p></a></li>
+				<li class="more"><a href=""><p>更多服装好物</p><p></p><p></p></a></li>
+			</ul>
+		</div>
+
+		<div class="contentpic contentpic3">
+			<a href="#" class="block">办公好物</a>
+			<ul>
+				<li><a href=""><img src="./image/haowu3.png"><p>绘画蜡笔</p><p class="price">￥255</p></a></li>
+				<li><a href=""><img src="./image/haowu3.png"><p>绘画蜡笔</p><p class="price">￥255</p></a></li>
+				<li><a href=""><img src="./image/haowu3.png"><p>绘画蜡笔</p><p class="price">￥255</p></a></li>
+				<li><a href=""><img src="./image/haowu3.png"><p>绘画蜡笔</p><p class="price">￥255</p></a></li>
+				<li><a href=""><img src="./image/haowu3.png"><p>绘画蜡笔</p><p class="price">￥255</p></a></li>
+				<li class="more"><a href=""><p>更多办公好物</p><p></p><p></p></a></li>
+			</ul>
+		</div>
+
+	</div>
+	<!--end content-->
+
+	<div data-role="main" class="ui-content" id="b_content">
+	111
+	</div>
+
+
+
+
+	<!--foot-->
+	<div data-role="footer" data-position="fixed" data-theme="a" class="foot">  <!--fixed-->
+		<div data-role="navbar">
+			<ul>
+				 <li><a href="#" data-icon="home" class="check">首页</a></li>
+				 <li><a href="" data-icon="tag">专题</a></li>
+				 <li><a href="" data-icon="bars">分类</a></li>
+				 <li><a href="" data-icon="shop">购物车</a></li>
+				 <li><a href="" data-icon="user">个人</a></li>
+			</ul>
+		</div>
+	</div>
+	<!--end foot-->
+</div>
+<!-- end mainpage1-->
+
+
+<script src="http://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script><!-- 引入 jQuery 库 -->
+<script src="http://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script><!-- 引入 jQuery Mobile 库 -->
+<script src="./js/swiper-3.4.1.min.js"></script><!-- 引入swiper -->
+
+
+<script>        
+var mySwiper = new Swiper ('.swiper-container', {
+	loop: true,
+	derection: 'horizontal',
+    pagination: '.swiper-pagination',
+    autoplay: 3000
+}); 
+$(document).ready(function(){
+
+})
+</script>  
+
+</body>
+</html>
