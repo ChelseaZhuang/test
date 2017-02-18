@@ -7,174 +7,707 @@
 <link rel="stylesheet" href="http://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.css"><!-- 引入 jQuery Mobile 样式 -->
 <link rel="stylesheet" href="./css/main.css">
 <link rel="stylesheet" href="./css/swiper-3.4.1.min.css">
-<script type="text/javascript" src="./js/iscroll.js"></script>
-
+<script type="text/javascript" src="./js/iscroll.js"></script><!-- 导航滑动 -->
 <script type="text/javascript">
-
-var myScroll;
-
-function loaded () {
-	myScroll = new IScroll('#wrapper', { eventPassthrough: true, scrollX: true, scrollY: false, preventDefault: false });
+	var myScroll;
+	function loaded () {
+		myScroll = new IScroll('#wrapper', { eventPassthrough: true, scrollX: true, scrollY: false, preventDefault: false });
 }
-
 </script>
-
 </head>
 
 <body onload="loaded()">
-<div data-role="page" id="mainpage1">
-	<!--head-->
-	<div data-role="header" data-position="fixed" data-theme="a">  <!--fixed-->
-		<h3>Shop</h3>
-		<input data-type="search" name="search" data-icon="search" placeholder="搜索商品，共2944款好物">
-
-
-	<div id="wrapper">
-		<!-- 导航栏 -->
-		<div id="scroller">
-			<ul>
-				<li class="underline"><a href="" class="check">推荐</a></li>
-				<li><a href="" id="">居家</a></li>
-				<li><a href="">餐厨</a></li>
-				<li><a href="">配件</a></li>
-				<li><a href="">服装</a></li>
-				<li><a href="" id="">居家</a></li>
-				<li><a href="">餐厨</a></li>
-				<li><a href="">配件</a></li>
-				<li><a href="">服装</a></li>
-				<li><a href="" id="">居家</a></li>
-				<li><a href="">餐厨</a></li>
-				<li><a href="">配件</a></li>
-				<li><a href="">服装</a></li>
-			</ul>	
-		</div>
-		<!--end 导航栏-->
-	</div>
-
-	</div> 	
-	<!--end head-->
-
-	
-	<!--content-->
-	<div data-role="main" class="ui-content" id="a_content">
-		<!-- 轮播 -->
-		<div class="swiper-container">  
-    		<div class="swiper-wrapper">
-      			<div class="swiper-slide"><a href="cooktool.html" target="_blank"><img src="./image/swiper/pic1.png" alt="包包主题" /></a></div>
-      	  		<div class="swiper-slide"><a href="something.html" target="_blank"><img src="./image/swiper/pic2.png" alt="办公主题" /></a></div>
-      	 		<div class="swiper-slide"><a href="coat.html" target="_blank"><img src="./image/swiper/pic3.png" alt="衣物主题" /></a></div>
-    		</div>
-			<div class="swiper-pagination"></div>
-		</div>
-		<!-- end 轮播 -->
-
-		<div class="service">
-			<ul class="ui-grid-b">
-				<li class="ui-block-a"><a href="">网易自营品牌</a></li>
-				<li class="ui-block-b"><a href="">80天无忧退货</a></li>
-				<li class="ui-block-c"><a href="">48小时快速退款</a></li>
-			</ul>
-		</div>
-
-		<div class="contentpic marginbottom">
-			<a href="#" class="block">品牌制造商直供&nbsp;&nbsp;></a>
-			<div class="topdiv">
-				<div>
-					<a href=""><img src="./image/xiangzi.png"></a>
-					<a href=""><img src="./image/shui.png"></a>
+<div data-role="page" id="mainpage" data-theme="a">
+	<!-- wrapper-->
+	<div>
+		<div id="page1">
+			<!--head-->
+			<div data-role="header" data-position="fixed">  <!--fixed-->
+				<h2 style="float:left;height:38px; margin-left: 10px;">shop</h2>
+				<a href="#search" data-transition="slide" style="padding:0;display:inline-block;height:35px;width:78%;margin: 0 0 0 20%;float: right;"><input data-type="search" name="search" placeholder="搜索商品，共2944款好物" style="width:100%;height:35px;padding: 0 0 0 10%;margin:0;"></a>
+				<!-- 导航栏 -->
+				<div id="wrapper">
+					<div id="scroller">
+						<ul>
+							<li id="li1"><a href="">推荐</a></li>
+							<li id="li2"><a href="">居家</a></li>
+							<li id="li3"><a href="">餐厨</a></li>
+							<li id="li4"><a href="">配件</a></li>
+							<li id="li5"><a href="">服装</a></li>
+							<li id="li6"><a href="">办公</a></li>
+							<li id="li7"><a href="">洗护</a></li>
+						</ul>	
+					</div>
 				</div>
-				<div><a href=""><img src="./image/chuang.png"></a></div>
+				<!--end 导航栏-->
+			</div> 	
+			<!--end head-->
+
+			<!-- content -->
+			<div id="content">
+				<!--a_content-->
+				<div  id="a_content">
+					<!-- 轮播 -->
+					<div class="swiper-container">  
+	    				<div class="swiper-wrapper">
+	      					<div class="swiper-slide"><a href="cooktool.html" target="_blank"><img src="./image/swiper/pic1.png" alt="包包主题" /></a></div>
+	      		  			<div class="swiper-slide"><a href="something.html" target="_blank"><img src="./image/swiper/pic2.png" alt="办公主题" /></a></div>
+	 	     	 			<div class="swiper-slide"><a href="coat.html" target="_blank"><img src="./image/swiper/pic3.png" alt="衣物主题" /></a></div>
+	 	   			</div>
+						<div class="swiper-pagination"></div>
+					</div>
+					<!-- end 轮播 -->
+
+					<div class="service">
+						<ul class="ui-grid-b">
+							<li class="ui-block-a"><a href="">网易自营品牌</a></li>
+							<li class="ui-block-b"><a href="">80天无忧退货</a></li>
+							<li class="ui-block-c"><a href="">48小时快速退款</a></li>
+						</ul>
+					</div>
+
+					<div class="contentpic marginbottom">
+						<a href="#" class="block">品牌制造商直供&nbsp;&nbsp;></a>
+						<div class="topdiv">
+							<div>
+								<a href=""><img src="./image/xiangzi.png"></a>
+								<a href=""><img src="./image/shui.png"></a>
+							</div>
+							<div><a href=""><img src="./image/chuang.png"></a></div>
+						</div>
+					</div>
+
+					<div class="contentpic marginbottom">
+						<a href="#" class="block">周一周四&nbsp;·&nbsp;新品首发&nbsp;&nbsp;></a>
+						<ul>
+							<li><a href=""><img src="./image/weijin.png"><p>经典纯色围巾</p><p class="price">￥109</p></a></li>
+							<li><a href=""><img src="./image/weijin.png"><p>经典纯色围巾</p><p class="price">￥109</p></a></li>
+							<li><a href=""><img src="./image/weijin.png"><p>经典纯色围巾</p><p class="price">￥109</p></a></li>
+							<li><a href=""><img src="./image/weijin.png"><p>经典纯色围巾</p><p class="price">￥109</p></a></li>
+						</ul>
+					</div>
+
+					<div class="contentpic border">
+						<a href="#" class="block">居家好物</a>
+						<ul>
+							<li><a href=""><img src="./image/haowu1.png"><p>纯棉水洗枕头</p><p class="price">￥111</p></a></li>
+							<li><a href=""><img src="./image/haowu1.png"><p>纯棉水洗枕头</p><p class="price">￥111</p></a></li>
+							<li><a href=""><img src="./image/haowu1.png"><p>纯棉水洗枕头</p><p class="price">￥111</p></a></li>
+							<li><a href=""><img src="./image/haowu1.png"><p>纯棉水洗枕头</p><p class="price">￥111</p></a></li>
+							<li><a href=""><img src="./image/haowu1.png"><p>纯棉水洗枕头</p><p class="price">￥111</p></a></li>
+							<li class="more"><a href=""><p>更多居家好物</p><p></p><p></p></a></li>
+						</ul>
+					</div>
+
+					<div class="contentpic border">
+						<a href="#" class="block">服装好物</a>
+						<ul>
+							<li><a href=""><img src="./image/haowu2.png"><p>棉花纯色上衣</p><p class="price">￥255</p></a></li>
+							<li><a href=""><img src="./image/haowu2.png"><p>棉花纯色上衣</p><p class="price">￥255</p></a></li>
+							<li><a href=""><img src="./image/haowu2.png"><p>棉花纯色上衣</p><p class="price">￥255</p></a></li>
+							<li><a href=""><img src="./image/haowu2.png"><p>棉花纯色上衣</p><p class="price">￥255</p></a></li>
+							<li><a href=""><img src="./image/haowu2.png"><p>棉花纯色上衣</p><p class="price">￥255</p></a></li>
+							<li class="more"><a href=""><p>更多服装好物</p></a></li>
+						</ul>
+					</div>
+
+					<div class="contentpic border">
+						<a href="#" class="block">办公好物</a>
+						<ul>
+							<li><a href=""><img src="./image/haowu3.png"><p>绘画蜡笔</p><p class="price">￥255</p></a></li>
+							<li><a href=""><img src="./image/haowu3.png"><p>绘画蜡笔</p><p class="price">￥255</p></a></li>
+							<li><a href=""><img src="./image/haowu3.png"><p>绘画蜡笔</p><p class="price">￥255</p></a></li>
+							<li><a href=""><img src="./image/haowu3.png"><p>绘画蜡笔</p><p class="price">￥255</p></a></li>
+							<li><a href=""><img src="./image/haowu3.png"><p>绘画蜡笔</p><p class="price">￥255</p></a></li>
+							<li class="more"><a href=""><p>更多办公好物</p></a></li>
+						</ul>
+					</div>
+
+				</div>
+				<!--end a_content-->
+
+				<!-- b_content-->
+				<div  id="b_content" style="display:none;">
+					<div><a href=""><img src="./image/jujia.png"></a></div>
+					<div class="contentpic border">
+						<a href="#" class="block">床品件套</a>
+						<ul>
+							<li><a href=""><img src="./image/jujia1.png"><p>天鹅绒床上用品</p><p class="price">￥2099</p></a></li>
+							<li><a href=""><img src="./image/jujia1.png"><p>天鹅绒床上用品</p><p class="price">￥2099</p></a></li>
+							<li><a href=""><img src="./image/jujia1.png"><p>天鹅绒床上用品</p><p class="price">￥2099</p></a></li>
+							<li><a href=""><img src="./image/jujia1.png"><p>天鹅绒床上用品</p><p class="price">￥2099</p></a></li>
+							<li><a href=""><img src="./image/jujia1.png"><p>天鹅绒床上用品</p><p class="price">￥2099</p></a></li>
+							<li><a href=""><img src="./image/jujia1.png"><p>天鹅绒床上用品</p><p class="price">￥2099</p></a></li>
+							<li><a href=""><img src="./image/jujia1.png"><p>天鹅绒床上用品</p><p class="price">￥2099</p></a></li>
+							<li><a href=""><img src="./image/jujia1.png"><p>天鹅绒床上用品</p><p class="price">￥2099</p></a></li>
+						</ul>
+					</div>
+					<div class="contentpic border">
+						<a href="#" class="block">法兰绒床品</a>
+						<ul>
+							<li><a href=""><img src="./image/jujia2.png"><p>法兰绒格子四件套</p><p class="price">￥2699</p></a></li>
+							<li><a href=""><img src="./image/jujia2.png"><p>法兰绒格子四件套</p><p class="price">￥2699</p></a></li>
+							<li><a href=""><img src="./image/jujia2.png"><p>法兰绒格子四件套</p><p class="price">￥2699</p></a></li>
+							<li><a href=""><img src="./image/jujia2.png"><p>法兰绒格子四件套</p><p class="price">￥2699</p></a></li>
+							<li><a href=""><img src="./image/jujia2.png"><p>法兰绒格子四件套</p><p class="price">￥2699</p></a></li>
+							<li><a href=""><img src="./image/jujia2.png"><p>法兰绒格子四件套</p><p class="price">￥2699</p></a></li>
+							<li><a href=""><img src="./image/jujia2.png"><p>法兰绒格子四件套</p><p class="price">￥2699</p></a></li>
+							<li><a href=""><img src="./image/jujia2.png"><p>法兰绒格子四件套</p><p class="price">￥2699</p></a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- end b_content -->
+
+				<!-- c_content -->
+				<div  id="c_content" style="display:none;">
+					<div><a href=""><img src="./image/canchu.png"></a></div>
+					<div class="contentpic border">
+						<a href="#" class="block">锅铲</a>
+						<ul>
+							<li><a href=""><img src="./image/canchu1.png"><p>煮锅</p><p class="price">￥2099</p></a></li>
+							<li><a href=""><img src="./image/canchu1.png"><p>煮锅</p><p class="price">￥2099</p></a></li>
+							<li><a href=""><img src="./image/canchu1.png"><p>煮锅</p><p class="price">￥2099</p></a></li>
+							<li><a href=""><img src="./image/canchu1.png"><p>煮锅</p><p class="price">￥2099</p></a></li>
+							<li><a href=""><img src="./image/canchu1.png"><p>煮锅</p><p class="price">￥2099</p></a></li>
+							<li><a href=""><img src="./image/canchu1.png"><p>煮锅</p><p class="price">￥2099</p></a></li>
+							<li><a href=""><img src="./image/canchu1.png"><p>煮锅</p><p class="price">￥2099</p></a></li>
+							<li><a href=""><img src="./image/canchu1.png"><p>煮锅</p><p class="price">￥2099</p></a></li>
+						</ul>
+					</div>
+					<div class="contentpic border">
+						<a href="#" class="block">刀具</a>
+						<ul>
+							<li><a href=""><img src="./image/canchu2.png"><p>刀具套装</p><p class="price">￥2699</p></a></li>
+							<li><a href=""><img src="./image/canchu2.png"><p>刀具套装</p><p class="price">￥2699</p></a></li>
+							<li><a href=""><img src="./image/canchu2.png"><p>刀具套装</p><p class="price">￥2699</p></a></li>
+							<li><a href=""><img src="./image/canchu2.png"><p>刀具套装</p><p class="price">￥2699</p></a></li>
+							<li><a href=""><img src="./image/canchu2.png"><p>刀具套装</p><p class="price">￥2699</p></a></li>
+							<li><a href=""><img src="./image/canchu2.png"><p>刀具套装</p><p class="price">￥2699</p></a></li>
+							<li><a href=""><img src="./image/canchu2.png"><p>刀具套装</p><p class="price">￥2699</p></a></li>
+							<li><a href=""><img src="./image/canchu2.png"><p>刀具套装</p><p class="price">￥2699</p></a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- end c_content -->
+
+				<!-- d_content -->
+				<div  id="d_content" style="display:none;">
+					<div><a href=""><img src="./image/peijian.png"></a></div>
+					<div class="contentpic border">
+						<a href="#" class="block">包包</a>
+						<ul>
+							<li><a href=""><img src="./image/peijian1.png"><p>商务包</p><p class="price">￥2099</p></a></li>
+							<li><a href=""><img src="./image/peijian1.png"><p>商务包</p><p class="price">￥2099</p></a></li>
+							<li><a href=""><img src="./image/peijian1.png"><p>商务包</p><p class="price">￥2099</p></a></li>
+							<li><a href=""><img src="./image/peijian1.png"><p>商务包</p><p class="price">￥2099</p></a></li>
+							<li><a href=""><img src="./image/peijian1.png"><p>商务包</p><p class="price">￥2099</p></a></li>
+							<li><a href=""><img src="./image/peijian1.png"><p>商务包</p><p class="price">￥2099</p></a></li>
+							<li><a href=""><img src="./image/peijian1.png"><p>商务包</p><p class="price">￥2099</p></a></li>
+							<li><a href=""><img src="./image/peijian1.png"><p>商务包</p><p class="price">￥2099</p></a></li>
+						</ul>
+					</div>
+					<div class="contentpic border">
+						<a href="#" class="block">旅行箱</a>
+						<ul>
+							<li><a href=""><img src="./image/peijian2.png"><p>旅行箱</p><p class="price">￥2699</p></a></li>
+							<li><a href=""><img src="./image/peijian2.png"><p>旅行箱</p><p class="price">￥2699</p></a></li>
+							<li><a href=""><img src="./image/peijian2.png"><p>旅行箱</p><p class="price">￥2699</p></a></li>
+							<li><a href=""><img src="./image/peijian2.png"><p>旅行箱</p><p class="price">￥2699</p></a></li>
+							<li><a href=""><img src="./image/peijian2.png"><p>旅行箱</p><p class="price">￥2699</p></a></li>
+							<li><a href=""><img src="./image/peijian2.png"><p>旅行箱</p><p class="price">￥2699</p></a></li>
+							<li><a href=""><img src="./image/peijian2.png"><p>旅行箱</p><p class="price">￥2699</p></a></li>
+							<li><a href=""><img src="./image/peijian2.png"><p>旅行箱</p><p class="price">￥2699</p></a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- end d_content -->
+
+				<!-- e_content -->
+				<div  id="e_content" style="display:none;">
+					<div><a href=""><img src="./image/fuzhuang.png"></a></div>
+					<div class="contentpic border">
+						<a href="#" class="block">家居服</a>
+						<ul>
+							<li><a href=""><img src="./image/fuzhuang1.png"><p>内衣家居服</p><p class="price">￥2099</p></a></li>
+							<li><a href=""><img src="./image/fuzhuang1.png"><p>内衣家居服</p><p class="price">￥2099</p></a></li>
+							<li><a href=""><img src="./image/fuzhuang1.png"><p>内衣家居服</p><p class="price">￥2099</p></a></li>
+							<li><a href=""><img src="./image/fuzhuang1.png"><p>内衣家居服</p><p class="price">￥2099</p></a></li>
+							<li><a href=""><img src="./image/fuzhuang1.png"><p>内衣家居服</p><p class="price">￥2099</p></a></li>
+							<li><a href=""><img src="./image/fuzhuang1.png"><p>内衣家居服</p><p class="price">￥2099</p></a></li>
+							<li><a href=""><img src="./image/fuzhuang1.png"><p>内衣家居服</p><p class="price">￥2099</p></a></li>
+							<li><a href=""><img src="./image/fuzhuang1.png"><p>内衣家居服</p><p class="price">￥2099</p></a></li>
+						</ul>
+					</div>
+					<div class="contentpic border">
+						<a href="#" class="block">袜类</a>
+						<ul>
+							<li><a href=""><img src="./image/fuzhuang2.png"><p>针织袜子</p><p class="price">￥2699</p></a></li>
+							<li><a href=""><img src="./image/fuzhuang2.png"><p>针织袜子</p><p class="price">￥2699</p></a></li>
+							<li><a href=""><img src="./image/fuzhuang2.png"><p>针织袜子</p><p class="price">￥2699</p></a></li>
+							<li><a href=""><img src="./image/fuzhuang2.png"><p>针织袜子</p><p class="price">￥2699</p></a></li>
+							<li><a href=""><img src="./image/fuzhuang2.png"><p>针织袜子</p><p class="price">￥2699</p></a></li>
+							<li><a href=""><img src="./image/fuzhuang2.png"><p>针织袜子</p><p class="price">￥2699</p></a></li>
+							<li><a href=""><img src="./image/fuzhuang2.png"><p>针织袜子</p><p class="price">￥2699</p></a></li>
+							<li><a href=""><img src="./image/fuzhuang2.png"><p>针织袜子</p><p class="price">￥2699</p></a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- end e_content -->
+
+				<!-- f_content -->
+				<div  id="f_content" style="display:none;">
+					<div><a href=""><img src="./image/bangong.png"></a></div>
+					<div class="contentpic border">
+						<a href="#" class="block">办公用品</a>
+						<ul>
+							<li><a href=""><img src="./image/bangong1.png"><p>透明胶带</p><p class="price">￥2099</p></a></li>
+							<li><a href=""><img src="./image/bangong1.png"><p>透明胶带</p><p class="price">￥2099</p></a></li>
+							<li><a href=""><img src="./image/bangong1.png"><p>透明胶带</p><p class="price">￥2099</p></a></li>
+							<li><a href=""><img src="./image/bangong1.png"><p>透明胶带</p><p class="price">￥2099</p></a></li>
+							<li><a href=""><img src="./image/bangong1.png"><p>透明胶带</p><p class="price">￥2099</p></a></li>
+							<li><a href=""><img src="./image/bangong1.png"><p>透明胶带</p><p class="price">￥2099</p></a></li>
+							<li><a href=""><img src="./image/bangong1.png"><p>透明胶带</p><p class="price">￥2099</p></a></li>
+							<li><a href=""><img src="./image/bangong1.png"><p>透明胶带</p><p class="price">￥2099</p></a></li>
+						</ul>
+					</div>
+					<div class="contentpic border">
+						<a href="#" class="block">笔类</a>
+						<ul>
+							<li><a href=""><img src="./image/bangong2.png"><p>办公本</p><p class="price">￥2699</p></a></li>
+							<li><a href=""><img src="./image/bangong2.png"><p>办公本</p><p class="price">￥2699</p></a></li>
+							<li><a href=""><img src="./image/bangong2.png"><p>办公本</p><p class="price">￥2699</p></a></li>
+							<li><a href=""><img src="./image/bangong2.png"><p>办公本</p><p class="price">￥2699</p></a></li>
+							<li><a href=""><img src="./image/bangong2.png"><p>办公本</p><p class="price">￥2699</p></a></li>
+							<li><a href=""><img src="./image/bangong2.png"><p>办公本</p><p class="price">￥2699</p></a></li>
+							<li><a href=""><img src="./image/bangong2.png"><p>办公本</p><p class="price">￥2699</p></a></li>
+							<li><a href=""><img src="./image/bangong2.png"><p>办公本</p><p class="price">￥2699</p></a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- end f_content -->
+
+				<!-- g_content -->
+				<div  id="g_content" style="display:none;">
+					<div><a href=""><img src="./image/xihu.png"></a></div>
+					<div class="contentpic border">
+						<a href="#" class="block">化妆工具</a>
+						<ul>
+							<li><a href=""><img src="./image/bangong1.png"><p>化妆毛刷</p><p class="price">￥2099</p></a></li>
+							<li><a href=""><img src="./image/bangong1.png"><p>化妆毛刷</p><p class="price">￥2099</p></a></li>
+							<li><a href=""><img src="./image/bangong1.png"><p>化妆毛刷</p><p class="price">￥2099</p></a></li>
+							<li><a href=""><img src="./image/bangong1.png"><p>化妆毛刷</p><p class="price">￥2099</p></a></li>
+							<li><a href=""><img src="./image/bangong1.png"><p>化妆毛刷</p><p class="price">￥2099</p></a></li>
+							<li><a href=""><img src="./image/bangong1.png"><p>化妆毛刷</p><p class="price">￥2099</p></a></li>
+							<li><a href=""><img src="./image/bangong1.png"><p>化妆毛刷</p><p class="price">￥2099</p></a></li>
+							<li><a href=""><img src="./image/bangong1.png"><p>化妆毛刷</p><p class="price">￥2099</p></a></li>
+						</ul>
+					</div>
+					<div class="contentpic border">
+						<a href="#" class="block">清洁工具</a>
+						<ul>
+							<li><a href=""><img src="./image/bangong2.png"><p>清洁葫芦球</p><p class="price">￥2699</p></a></li>
+							<li><a href=""><img src="./image/bangong2.png"><p>清洁葫芦球</p><p class="price">￥2699</p></a></li>
+							<li><a href=""><img src="./image/bangong2.png"><p>清洁葫芦球</p><p class="price">￥2699</p></a></li>
+							<li><a href=""><img src="./image/bangong2.png"><p>清洁葫芦球</p><p class="price">￥2699</p></a></li>
+							<li><a href=""><img src="./image/bangong2.png"><p>清洁葫芦球</p><p class="price">￥2699</p></a></li>
+							<li><a href=""><img src="./image/bangong2.png"><p>清洁葫芦球</p><p class="price">￥2699</p></a></li>
+							<li><a href=""><img src="./image/bangong2.png"><p>清洁葫芦球</p><p class="price">￥2699</p></a></li>
+							<li><a href=""><img src="./image/bangong2.png"><p>清洁葫芦球</p><p class="price">￥2699</p></a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- end g_content -->
+			</div>
+			<!-- end content -->
+		</div>
+		<!-- end page1-->
+
+		<!-- page2 -->
+		<div id="page2">
+			<div><h4>专题</h4></div>
+			<div>
+				<ul>
+					<li><a href=""><img src="./image/zhuanti.png"><p class="page2_p">一起感受冬日里温暖</p><p>9.9元起</p></a></li>
+					<li><a href=""><img src="./image/zhuanti.png"><p class="page2_p">一起感受冬日里温暖</p><p>9.9元起</p></a></li>
+					<li><a href=""><img src="./image/zhuanti.png"><p class="page2_p">一起感受冬日里温暖</p><p>9.9元起</p></a></li>
+					<li><a href=""><img src="./image/zhuanti.png"><p class="page2_p">一起感受冬日里温暖</p><p>9.9元起</p></a></li>
+					<li><a href=""><img src="./image/zhuanti.png"><p class="page2_p">一起感受冬日里温暖</p><p>9.9元起</p></a></li>
+					<li><a href=""><img src="./image/zhuanti.png"><p class="page2_p">一起感受冬日里温暖</p><p>9.9元起</p></a></li>
+					<li><a href=""><img src="./image/zhuanti.png"><p class="page2_p">一起感受冬日里温暖</p><p>9.9元起</p></a></li>
+					<li><a href=""><img src="./image/zhuanti.png"><p class="page2_p">一起感受冬日里温暖</p><p>9.9元起</p></a></li>
+					<li><a href=""><img src="./image/zhuanti.png"><p class="page2_p">一起感受冬日里温暖</p><p>9.9元起</p></a></li>
+					<li><a href=""><img src="./image/zhuanti.png"><p class="page2_p">一起感受冬日里温暖</p><p>9.9元起</p></a></li>
+				</ul>
 			</div>
 		</div>
+		<!-- end page2-->
 
-		<div class="contentpic marginbottom">
-			<a href="#" class="block">周一周四&nbsp;·&nbsp;新品首发&nbsp;&nbsp;></a>
-			<ul>
-				<li><a href=""><img src="./image/weijin.png"><p>经典纯色围巾</p><p class="price">￥109</p></a></li>
-				<li><a href=""><img src="./image/weijin.png"><p>经典纯色围巾</p><p class="price">￥109</p></a></li>
-				<li><a href=""><img src="./image/weijin.png"><p>经典纯色围巾</p><p class="price">￥109</p></a></li>
-				<li><a href=""><img src="./image/weijin.png"><p>经典纯色围巾</p><p class="price">￥109</p></a></li>
-			</ul>
+		<!-- page3 -->
+		<div id="page3">
+			<input type="search" name="" placeholder="搜索商品">
+			<div data-role="tabs">
+				<div class="tabdiv">
+	        		<ul>
+	        		  <li><a href="#tab1" class="ui-btn-active">送礼</a></li>
+	        		  <li><a href="#tab2">居家</a></li>
+	        		  <li><a href="#tab3">餐厨</a></li>
+	        		  <li><a href="#tab4">配件</a></li>
+	        		  <li><a href="#tab5">服装</a></li>
+	        		  <li><a href="#tab6">办公</a></li>
+	        		  <li><a href="#tab7">洗护</a></li>
+	       			 </ul>
+	       		</div>
+	       		<div id="tab1">
+	       			<a href=""><img src="./image/songli.png"></a>
+	       			<table border="0">
+	       			<caption>-送礼分类-</caption>
+	       			<tr>
+	       				<td><a href=""><img src="./image/songli1.png"><p>商务礼盒</p></a></td>
+	       				<td><a href=""><img src="./image/songli2.png"><p>鸡年礼盒</p></a></td>
+	       				<td><a href=""><img src="./image/songli3.png"><p>送朋友</p></a></td>
+	       			</tr>
+	       			<tr>
+	       				<td><a href=""><img src="./image/songli4.png"><p>送宝贝</p></a></td>
+	       				<td><a href=""><img src="./image/songli5.png"><p>送爸妈</p></a></td>
+	       				<td><a href=""><img src="./image/songli6.png"><p>送给她</p></a></td>
+	       			</tr>
+	       			<tr>
+	       				<td><a href=""><img src="./image/songli7.png"><p>送给他</p></a></td>
+	       			</tr>
+	       			</table>
+	       		</div>
+	       		<div id="tab2">
+	       			<a href=""><img src="./image/jujiatab.png"></a>
+	       			<table border="0">
+	       			<caption>-居家分类-</caption>
+	       			<tr>
+	       				<td><a href=""><img src="./image/tab2img.png"><p>被枕</p></a></td>
+	       				<td><a href=""><img src="./image/tab2img.png"><p>床品件套</p></a></td>
+	       				<td><a href=""><img src="./image/tab2img.png"><p>床垫</p></a></td>
+	       			</tr>
+	       			<tr>
+	       				<td><a href=""><img src="./image/tab2img.png"><p>地垫</p></a></td>
+	       				<td><a href=""><img src="./image/tab2img.png"><p>家具</p></a></td>
+	       				<td><a href=""><img src="./image/tab2img.png"><p>舒坐</p></a></td>
+	       			</tr>
+	       			<tr>
+	       				<td><a href=""><img src="./image/tab2img.png"><p>灯具</p></a></td>
+	       				<td><a href=""><img src="./image/tab2img.png"><p>家饰</p></a></td>
+	       			</tr>
+	       			</table>
+	       		</div>
+	       		<div id="tab3">
+	       			<a href=""><img src="./image/canchutab.png"></a>
+	       			<table border="0">
+	       			<caption>-餐厨分类-</caption>
+	       			<tr>
+	       				<td><a href=""><img src="./image/tab3img.png"><p>锅具</p></a></td>
+	       				<td><a href=""><img src="./image/tab3img.png"><p>刀铲</p></a></td>
+	       				<td><a href=""><img src="./image/tab3img.png"><p>功能厨具</p></a></td>
+	       			</tr>
+	       			<tr>
+	       				<td><a href=""><img src="./image/tab3img.png"><p>餐具</p></a></td>
+	       				<td><a href=""><img src="./image/tab3img.png"><p>杯壶</p></a></td>
+	       				<td><a href=""><img src="./image/tab3img.png"><p>茶具</p></a></td>
+	       			</tr>
+	       			<tr>
+	       				<td><a href=""><img src="./image/tab3img.png"><p>保鲜</p></a></td>
+	       				<td><a href=""><img src="./image/tab3img.png"><p>清洁</p></a></td>
+	       				<td><a href=""><img src="./image/tab3img.png"><p>厨房电器</p></a></td>
+	       			</tr>
+	       			</table>
+	       		</div>
+	       		<div id="tab4">
+	       			<a href=""><img src="./image/peijiantab.png"></a>
+	       			<table border="0">
+	       			<caption>-配件分类-</caption>
+	       			<tr>
+	       				<td><a href=""><img src="./image/tab4img.png"><p>功能箱包</p></a></td>
+	       				<td><a href=""><img src="./image/tab4img.png"><p>双肩包</p></a></td>
+	       				<td><a href=""><img src="./image/tab4img.png"><p>单肩包</p></a></td>
+	       			</tr>
+	       			<tr>
+	       				<td><a href=""><img src="./image/tab4img.png"><p>鞋</p></a></td>
+	       				<td><a href=""><img src="./image/tab4img.png"><p>靴</p></a></td>
+	       				<td><a href=""><img src="./image/tab4img.png"><p>拖鞋</p></a></td>
+	       			</tr>
+	       			<tr>
+	       				<td><a href=""><img src="./image/tab4img.png"><p>围巾件套</p></a></td>
+	       				<td><a href=""><img src="./image/tab4img.png"><p>配饰</p></a></td>
+	       			</tr>
+	       			</table>
+	       		</div>
+	       		<div id="tab5">
+	       			<a href=""><img src="./image/fuzhuangtab.png"></a>
+	       			<table border="0">
+	       			<caption>-服装分类-</caption>
+	       			<tr>
+	       				<td><a href=""><img src="./image/tab5img.png"><p>内裤</p></a></td>
+	       				<td><a href=""><img src="./image/tab5img.png"><p>内衣</p></a></td>
+	       				<td><a href=""><img src="./image/tab5img.png"><p>袜子</p></a></td>
+	       			</tr>
+	       			<tr>
+	       				<td><a href=""><img src="./image/tab5img.png"><p>外衣</p></a></td>
+	       				<td><a href=""><img src="./image/tab5img.png"><p>家居服</p></a></td>
+	       				<td><a href=""><img src="./image/tab5img.png"><p>衬衫</p></a></td>
+	       			</tr>
+	       			<tr>
+	       				<td><a href=""><img src="./image/tab5img.png"><p>T恤</p></a></td>
+	       			</table>
+	       		</div>
+	       		<div id="tab6">
+	       			<a href=""><img src="./image/bangongtab.png"></a>
+	       			<table border="0">
+	       			<caption>-办公分类-</caption>
+	       			<tr>
+	       				<td><a href=""><img src="./image/tab6img.png"><p>文具</p></a></td>
+	       				<td><a href=""><img src="./image/tab6img.png"><p>收纳</p></a></td>
+	       				<td><a href=""><img src="./image/tab6img.png"><p>旅行</p></a></td>
+	       			</tr>
+	       			<tr>
+	       				<td><a href=""><img src="./image/tab6img.png"><p>雨具</p></a></td>
+	       				<td><a href=""><img src="./image/tab6img.png"><p>唱片</p></a></td>
+	       				<td><a href=""><img src="./image/tab6img.png"><p>口罩</p></a></td>
+	       			</tr>
+	       			<tr>
+	       			</table>
+	       		</div>
+	       		<div id="tab7">
+	       			<a href=""><img src="./image/xihutab.png"></a>
+	       			<table border="0">
+	       			<caption>-洗护分类-</caption>
+	       			<tr>
+	       				<td><a href=""><img src="./image/tab7img.png"><p>毛巾</p></a></td>
+	       				<td><a href=""><img src="./image/tab7img.png"><p>香薰</p></a></td>
+	       				<td><a href=""><img src="./image/tab7img.png"><p>美妆</p></a></td>
+	       			</tr>
+	       			<tr>
+	       				<td><a href=""><img src="./image/tab7img.png"><p>面部护理</p></a></td>
+	       				<td><a href=""><img src="./image/tab7img.png"><p>护法</p></a></td>
+	       				<td><a href=""><img src="./image/tab7img.png"><p>日用清洁</p></a></td>
+	       			</tr>
+	       			<tr>
+	       				<td><a href=""><img src="./image/tab7img.png"><p>用具</p></a></td>
+	       			</tr>
+	       			</table>
+	       		</div>
+			</div>
 		</div>
+		<!-- end page3-->
 
-		<div class="contentpic contentpic3">
-			<a href="#" class="block">居家好物</a>
-			<ul>
-				<li><a href=""><img src="./image/haowu1.png"><p>纯棉水洗枕头</p><p class="price">￥111</p></a></li>
-				<li><a href=""><img src="./image/haowu1.png"><p>纯棉水洗枕头</p><p class="price">￥111</p></a></li>
-				<li><a href=""><img src="./image/haowu1.png"><p>纯棉水洗枕头</p><p class="price">￥111</p></a></li>
-				<li><a href=""><img src="./image/haowu1.png"><p>纯棉水洗枕头</p><p class="price">￥111</p></a></li>
-				<li><a href=""><img src="./image/haowu1.png"><p>纯棉水洗枕头</p><p class="price">￥111</p></a></li>
-				<li class="more"><a href=""><p>更多居家好物</p><p></p><p></p></a></li>
-			</ul>
+		<!-- page4 -->
+		<div id="page4">
+			<div data-role="header">
+				<a href="#" data-inline="true" data-role="none" ui-btn-right>编辑</a>
+				<h4>购物车</h4>
+			</div>
+			<div class="service">
+				<ul class="ui-grid-b">
+					<li class="ui-block-a"><a href="">网易自营品牌</a></li>
+					<li class="ui-block-b"><a href="">80天无忧退货</a></li>
+					<li class="ui-block-c"><a href="">48小时快速退款</a></li>
+				</ul>
+			</div>
+	   		<form method="post" action="demoform.php">
+	     		<fieldset data-role="controlgroup">
+	       			<legend>满88享包邮</legend>
+	        		<label for="red">双肩包</label>
+	         	   <input type="checkbox" name="favcolor" id="red" value="red">
+	         	   <label for="green">20寸旅行箱</label>
+	         	   <input type="checkbox" name="favcolor" id="green" value="green">
+	         	   <label for="blue">船袜</label>
+	         	   <input type="checkbox" name="favcolor" id="blue" value="blue">  
+	       		</fieldset>
+	        	<input type="submit" data-inline="true" value="下单" id="submit">
+	    	</form>
 		</div>
+		<!-- end page4-->
 
-		<div class="contentpic contentpic3">
-			<a href="#" class="block">服装好物</a>
-			<ul>
-				<li><a href=""><img src="./image/haowu2.png"><p>棉花纯色上衣</p><p class="price">￥255</p></a></li>
-				<li><a href=""><img src="./image/haowu2.png"><p>棉花纯色上衣</p><p class="price">￥255</p></a></li>
-				<li><a href=""><img src="./image/haowu2.png"><p>棉花纯色上衣</p><p class="price">￥255</p></a></li>
-				<li><a href=""><img src="./image/haowu2.png"><p>棉花纯色上衣</p><p class="price">￥255</p></a></li>
-				<li><a href=""><img src="./image/haowu2.png"><p>棉花纯色上衣</p><p class="price">￥255</p></a></li>
-				<li class="more"><a href=""><p>更多服装好物</p><p></p><p></p></a></li>
-			</ul>
+		<!-- page5 -->
+		<div id="page5">
+			<div class="page5_a">
+				<a href="#person" data-transition="slide">
+					<img src="./image/touxiang.jpg">
+					<span>ChelseaZhuang</span>
+				</a>
+			</div>
+			<div class="mydingdan_a">
+				<a href="#dingdan">我的订单</a>
+			</div>
+			<div data-role="controlgroup" data-type="horizontal">
+				<a href="#dingdan" class="ui-btn ui-icon-shop ui-btn-icon-top">待付款</a>
+				<a href="#dingdan" class="ui-btn ui-icon-shop ui-btn-icon-top">待发货</a>
+				<a href="#dingdan" class="ui-btn ui-icon-shop ui-btn-icon-top">已发货</a>
+				<a href="#dingdan" class="ui-btn ui-icon-shop ui-btn-icon-top">待评价</a>
+			</div>
+			<div data-role="controlgroup" data-type="vertical" class="page5_last">
+				<a href="mystar" class="ui-btn ui-icon-shop ui-btn-icon-left">我的收藏</a>
+				<a href="#cheapcard" class="ui-btn ui-icon-shop ui-btn-icon-left">优惠券</a>
+				<a href="#add" class="ui-btn ui-icon-shop ui-btn-icon-left">地址管理</a>
+				<a href="#onlineservice" class="ui-btn ui-icon-shop ui-btn-icon-left">在线客服</a>
+				<a href="#helpcenter" class="ui-btn ui-icon-shop ui-btn-icon-left">帮助中心</a>
+				<a href="#setup" class="ui-btn ui-icon-shop ui-btn-icon-left">系统设置</a>
+			</div>
 		</div>
-
-		<div class="contentpic contentpic3">
-			<a href="#" class="block">办公好物</a>
-			<ul>
-				<li><a href=""><img src="./image/haowu3.png"><p>绘画蜡笔</p><p class="price">￥255</p></a></li>
-				<li><a href=""><img src="./image/haowu3.png"><p>绘画蜡笔</p><p class="price">￥255</p></a></li>
-				<li><a href=""><img src="./image/haowu3.png"><p>绘画蜡笔</p><p class="price">￥255</p></a></li>
-				<li><a href=""><img src="./image/haowu3.png"><p>绘画蜡笔</p><p class="price">￥255</p></a></li>
-				<li><a href=""><img src="./image/haowu3.png"><p>绘画蜡笔</p><p class="price">￥255</p></a></li>
-				<li class="more"><a href=""><p>更多办公好物</p><p></p><p></p></a></li>
-			</ul>
+		<!-- end page5-->
 		</div>
-
-	</div>
-	<!--end content-->
-
-	<div data-role="main" class="ui-content" id="b_content">
-	111
-	</div>
-
-
-
+	<!-- end wrapper -->
 
 	<!--foot-->
-	<div data-role="footer" data-position="fixed" data-theme="a" class="foot">  <!--fixed-->
+	<div data-role="footer" data-position="fixed" class="foot" data-tap-toggle="false">  <!--fixed-->
 		<div data-role="navbar">
 			<ul>
-				 <li><a href="#" data-icon="home" class="check">首页</a></li>
-				 <li><a href="" data-icon="tag">专题</a></li>
-				 <li><a href="" data-icon="bars">分类</a></li>
-				 <li><a href="" data-icon="shop">购物车</a></li>
-				 <li><a href="" data-icon="user">个人</a></li>
+				 <li id="footli1"><a href="" data-icon="home">首页</a></li>
+				 <li id="footli2"><a href="" data-icon="tag">专题</a></li>
+				 <li id="footli3"><a href="" data-icon="bars">分类</a></li>
+				 <li id="footli4"><a href="" data-icon="shop">购物车</a></li>
+				 <li id="footli5"><a href="" data-icon="user">个人</a></li>
 			</ul>
 		</div>
 	</div>
 	<!--end foot-->
 </div>
-<!-- end mainpage1-->
+<!-- end mainpage-->
 
+<!-- search page -->
+<div data-role="page" id="search"">
+	<a href="#page" class="ui-btn ui-btn-inline ui-icon-back ui-btn-icon-notext ui-corner-all ui-shadow" data-rel="back" data-transition="slide" data-direction="reverse"></a>
+	<input data-type="search" name="search" placeholder="搜索您想要的商品" data-clear-btn="true" style="height:30px;padding: 0 0 0 10%;font-size: 14px;">
+</div>
+<!-- end search page-->
 
+<!-- person page -->
+<div data-role="page" id="person">
+	<a href="#" class="ui-btn ui-btn-inline ui-icon-back ui-btn-icon-notext ui-corner-all ui-shadow" data-rel="back" data-transition="slide" data-direction="reverse"></a>
+    <div data-role="controlgroup" data-type="vertical">
+    	<a href="#" class="ui-btn"><span class="span_a">个人信息</span><span class="span_b"><img src="./image/touxiang.jpg" height="28" width="28">></span></a>
+      	<a href="#" class="ui-btn"><span class="span_a">会员信息</span><span class="span_b" >></span></a>
+      	<a href="#" class="ui-btn"><span class="span_a">帐号安全</span><span class="span_b">></span></a>
+    </div>	
+</div>
+<!-- end person page-->
+
+<!--dingdan page-->
+<div data-role="page" id="dingdan">
+	<div data-role="header">
+	    <a href="#" class="ui-btn ui-btn-inline ui-icon-back ui-btn-icon-notext ui-corner-all ui-shadow" data-rel="back" data-transition="flow" data-direction="reverse"></a>
+	   	<h4>订单</h4>
+	</div>
+	<div data-role="main">
+		<div data-role="tabs">
+			<div class="tabdiv">
+        		<ul>
+        		  <li><a href="#tab11" class="ui-btn-active">全部</a></li>
+        		  <li><a href="#tab22">待付款</a></li>
+        		  <li><a href="#tab33">待发货</a></li>
+        		  <li><a href="#tab44">已发货</a></li>
+        		  <li><a href="#tab55">待评价</a></li>
+       			 </ul>
+       		</div>
+       		<div id="tab11">全部订单</div>
+      		<div id="tab22">待付款</div>
+      		<div id="tab33">待发货</div>
+       		<div id="tab44">已发货</div>
+       		<div id="tab55">待评价</div>
+    	</div>
+    </div>
+</div>
+<!--end dingdan page-->
+
+<!--js脚本-->
 <script src="http://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script><!-- 引入 jQuery 库 -->
 <script src="http://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script><!-- 引入 jQuery Mobile 库 -->
-<script src="./js/swiper-3.4.1.min.js"></script><!-- 引入swiper -->
-
-
+<script src="./js/swiper-3.4.1.min.js"></script><!-- swiper -->
 <script>        
-var mySwiper = new Swiper ('.swiper-container', {
+var mySwiper = new Swiper ('#a_content .swiper-container', {
 	loop: true,
 	derection: 'horizontal',
     pagination: '.swiper-pagination',
     autoplay: 3000
 }); 
-$(document).ready(function(){
+$(document).on("pagecreate","#mainpage",function(){
+	$("#li1").on("click",function(){
+		$("#a_content").siblings().hide();
+		$("#a_content").show();
+		$(this).children().css("color","#8B1A1A");
+		$(this).siblings().children().css("color","gray");		
+	});
+	$("#li2").on("click",function(){
+		$("#b_content").siblings().hide();
+		$("#b_content").show();
+		$(this).children().css("color","#8B1A1A");
+		$(this).siblings().children().css("color","gray");
+	});
+	$("#li3").on("click",function(){
+		$("#c_content").siblings().hide();
+		$("#c_content").show();
+		$(this).children().css("color","#8B1A1A");
+		$(this).siblings().children().css("color","gray");
+	});
 
-})
+	$("#li4").on("click",function(){
+		$("#d_content").siblings().hide();
+		$("#d_content").show();
+		$(this).children().css("color","#8B1A1A");
+		$(this).siblings().children().css("color","gray");
+	});
+
+	$("#li5").on("click",function(){
+		$("#e_content").siblings().hide();
+		$("#e_content").show();
+		$(this).children().css("color","#8B1A1A");
+		$(this).siblings().children().css("color","gray");
+	});
+
+	$("#li6").on("click",function(){
+		$("#f_content").siblings().hide();
+		$("#f_content").show();
+		$(this).children().css("color","#8B1A1A");
+		$(this).siblings().children().css("color","gray");
+	});
+
+	$("#li7").on("click",function(){
+		$("#g_content").siblings().hide();
+		$("#g_content").show();
+		$(this).children().css("color","#8B1A1A");
+		$(this).siblings().children().css("color","gray");
+	});                                      //头部导航li
+
+	$("#footli1").on("click",function(){
+		$("#page1").siblings().hide();
+		$("#page1").show();
+		$(this).children().css("color","#8B1A1A");
+		$(this).siblings().children().css("color","#333333");
+	});
+
+	$("#footli2").on("click",function(){
+		$("#page2").siblings().hide();
+		$("#page2").show();
+		$(this).children().css("color","#8B1A1A");
+		$(this).siblings().children().css("color","#333333");
+	});
+
+	$("#footli3").on("click",function(){
+		$("#page3").siblings().hide();
+		$("#page3").show();
+		$(this).children().css("color","#8B1A1A");
+		$(this).siblings().children().css("color","#333333");
+	});
+
+	$("#footli4").on("click",function(){
+		$("#page4").siblings().hide();
+		$("#page4").show();
+		$(this).children().css("color","#8B1A1A");
+		$(this).siblings().children().css("color","#333333");
+	});
+
+	$("#footli5").on("click",function(){
+		$("#page5").siblings().hide();
+		$("#page5").show();
+		$(this).children().css("color","#8B1A1A");
+		$(this).siblings().children().css("color","#333333");
+	});                                   	//尾部导航li
+});
 </script>  
 
 </body>
