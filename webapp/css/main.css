@@ -26,7 +26,7 @@ input{font-size: 14px;}
 .border li{border-left: 1px solid #EBEBEB;border-bottom: 1px solid #EBEBEB;}
 .more a{display: block;width: 100%;height: 100%;line-height: 200px;}
 
-#wrapper{position: relative;z-index: 1;height: 30px;width: 100%;overflow: hidden;-ms-touch-action:none;}
+#wrapper{position: relative;z-index: 1;height: 55px;width: 100%;overflow: hidden;-ms-touch-action:none;}
 #scroller{position: absolute;z-index: 1;width: 1000px;height: 30px;	-webkit-transform: translateZ(0);
 	-moz-transform: translateZ(0);
 	-ms-transform: translateZ(0);
@@ -44,18 +44,19 @@ input{font-size: 14px;}
 	text-size-adjust: none;}
 #scroller ul {
 	width: 100%;
+	height: 55px;
 	padding: 0;
 	margin: 0;
 }
 #scroller li {
 	width: 80px;
-	height: 30px;
+	height: 100%;
 	float: left;
-	line-height: 30px;
+	line-height: 55px;
 	border-right: 1px solid #ccc;
 	border-bottom: 1px solid #ccc;
 	background-color: #fafafa;
-	font-size: 12px;
+	font-size: 14px;
 	color: gray;
 	overflow: hidden;
 	text-align: center;
@@ -82,10 +83,10 @@ input{font-size: 14px;}
 #page3 #tab1 table p,#tab2 table p,#tab3 table p,#tab4 table p,#tab5 table p,#tab6 table p,#tab7 table p{font-size: 8px;color: gray;}
 #page3 #tab1 table td,#tab2 table td,#tab3 table td,#tab4 table td,#tab5 table td,#tab6 table td,#tab7 table td{padding: 4%;}
 
-#page4 .service a{color: gray;display: inline-block;width: 100%;height: 100%;}
+#page4 .service a{color: gray;display: inline-block;width: 100%;height: 100%;font-size: 12px;}
 #page4 div:first-child a{color: gray;}
 #page4 div:first-child h4{margin-top: -10px;}
-#page4 form legend{font-size: 10px;color: #CD2626;}
+#page4 form legend{font-size: 12px;color: #CD2626;text-align: left;margin-left: 3%;}
 
 
 #page5 .page5_a{width: 100%;height: 140px;background-color: black;line-height: 140px;}
@@ -104,5 +105,5 @@ input{font-size: 14px;}
 #dingdan{text-align: center;}
 #dingdan li{float: left;width: 20%;height: 30px;outline: none;}
 #dingdan .tabdiv a{display: inline-block;width: 100%;height: 100%;color: gray;font-size: 14px;outline: none;}
-#dingdan #tab11,#dingdan #tab22,#dingdan #tab33,#dingdan #tab44,#dingdan #tab55{font-size: 8px;color: #DEDEDE;height: 550px;line-height: 550px;}
+#dingdan #tab11,#dingdan #tab22,#dingdan #tab33,#dingdan #tab44,#dingdan #tab55{font-size: 14px;color: #DEDEDE;height: 550px;line-height: 550px;}
 
