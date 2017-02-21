@@ -1,0 +1,196 @@
+	*{margin: 0;padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;}
+ 	body{font-size: 62.5%;font-family: "微软雅黑";}
+ 	body a{text-decoration: none;}
+ 	body a:hover{text-decoration: none;}
+ 	body a:active{text-decoration: none;}
+	li{list-style-type: none;}
+	img{border: 0;max-width: 100%;width: auto;}
+	header,footer,article,aside,section,nav{display:block}  /* 支持HTML5标签 */
+
+/* iphone */
+@media  screen  and (min-width: 320px) and (max-width: 767px)  {
+	img{max-width: 100%;width: auto;}
+	/*header*/
+		header{width: 100%;height: 120px;position: fixed;overflow: hidden;z-index: 99;text-align: center;}
+		/* nav */	
+		#nav{width: 100%;height: 60%;background-color: black;}
+		#nav ul{width: 100%;height: 100%;margin: 0 auto;}
+		#nav ul li{float: left;width: 25%;height: 100%;line-height: 72px;}
+		#nav ul li a{display: inline-block;width: 100%;height: 100%;font-size: 1.6rem;color: white;}
+		#nav ul li a:active{font-size: 1.8rem;}
+		#navbar{width: 100%;height: 40%;background-color: #363636;}
+		#navbar ul{width: 100%;height: 100%;margin: 0 auto;}
+		#navbar ul li{float: left;width: 25%;height: 100%;line-height: 48px;}
+		#navbar ul li a{display: inline-block;width: 100%;height: 100%;font-size: 1rem;color: white;}
+		#navbar ul li a:active{text-decoration: none;background-color: black;}
+		#navbar ul li i{display: inline-block;margin-right: 0.5rem;} 
+		#navbar ul .check{background-color: #363636;}
+		#light{
+			-webkit-animation: shinning 2s infinite ease-in-out;
+			animation: shinning 2s infinite ease-in-out;
+		}
+
+		@-webkit-keyframes shinning{
+			0%{color: red;opacity: 1;}
+			30%{color: #EEC900;opacity: 1;}
+			60%{color: #008B00;opacity: 1;}
+			100%{color :#8B008B;opacity: 1;}
+		}
+		@keyframes shinning{
+			0%{color: red;opacity: 1;}
+			30%{color: #EEC900;opacity: 1;}
+			60%{color: #008B00;opacity: 1;}
+			100%{color :#8B008B;opacity: 1;}
+		} 
+	/* section */
+		section{width: 100%;height: auto;overflow: hidden;z-index: -1;}
+		section #content{position: relative;width: 100%;height: auto;margin: 120px auto 0;padding: 2%;background-color: white;}
+		section #content > div{height: auto;margin-bottom: 2%;padding-bottom: 2%;border-bottom: 4px solid #363636;overflow: hidden;}
+		section #content > div > div:first-child{width: 100%;height: 100%;text-align: center;font-size: 1.2rem;padding-top: 8%;}
+		section #content > div > div:last-child{width: 100%;height: 100%;text-align: left;}
+		section #content .top{width: 100%;height: auto;padding: 1rem;font-size: 2rem;font-weight: bold;text-align: center;}
+		section #content .bottom{position: relative;width: 100%;height: auto;overflow: hidden;line-height: 3.6rem;}
+		section #content .bottom a{position: absolute;display: inline-block;width: 30%;height: 20%;right: 0;bottom: 0;background-color: red;text-align: center;color: white;font-size: 1.4rem;border-top: 2px solid white;border-bottom: 2px solid white;border-left: 2px solid white;border-radius: 25px 0 0 25px;}
+	/*footer*/
+		footer{width: 100%;height: auto;padding: 2% 0;text-align: center;background-color: black;color: white;}
+		footer .contact{font-size: 1rem;}
+		footer .contact a{color: white;}
+		footer form{font-size: 1.4rem;width: 90%;margin: 0 auto;text-align: left;}
+		footer button{margin-top: 1%;}
+		footer .copyright{font-size: 0.6rem;}
+}
+
+/* iPad */
+@media  screen  and (min-width: 768px) and (max-width: 1023px){
+	img{max-width: 100%;width: auto;}
+	/*header*/
+		header{width: 100%;height: 120px;position: fixed;overflow: hidden;z-index: 99;text-align: center;}
+		/* nav */	
+		#nav{width: 100%;height: 60%;background-color: black;}
+		#nav ul{width: 100%;height: 100%;margin: 0 auto;}
+		#nav ul li{float: left;width: 25%;height: 100%;line-height: 72px;}
+		#nav ul li a{display: inline-block;width: 100%;height: 100%;font-size: 1.2rem;color: white;}
+		#nav ul li a:active{font-size: 1.4rem;}
+		#navbar{width: 100%;height: 40%;background-color: #363636;}
+		#navbar ul{width: 100%;height: 100%;margin: 0 auto;}
+		#navbar ul li{float: left;width: 25%;height: 100%;line-height: 48px;}
+		#navbar ul li a{display: inline-block;width: 100%;height: 100%;font-size: 1rem;color: white;}
+		#navbar ul li a:active{text-decoration: none;background-color: black;}
+		#navbar ul li i{display: inline-block;margin-right: 0.5rem;} 
+		#navbar ul .check{background-color: #363636;}
+		#light{
+			-webkit-animation: shinning 2s infinite ease-in-out;
+			animation: shinning 2s infinite ease-in-out;
+		}
+
+		@-webkit-keyframes shinning{
+			0%{color: red;opacity: 1;}
+			30%{color: #EEC900;opacity: 1;}
+			60%{color: #008B00;opacity: 1;}
+			100%{color :#8B008B;opacity: 1;}
+		}
+		@keyframes shinning{
+			0%{color: red;opacity: 1;}
+			30%{color: #EEC900;opacity: 1;}
+			60%{color: #008B00;opacity: 1;}
+			100%{color :#8B008B;opacity: 1;}
+		} 
+	/* section */
+		section{width: 100%;height: auto;background-color: #003366;overflow: hidden;z-index: -1;}
+		section #content{position: relative;width: 80%;height: auto;margin: 120px auto 0;padding: 3%;background-color: white;}
+		section #content > div{height: auto;margin-bottom: 2%;padding-bottom: 2%;border-bottom: 4px solid #363636;overflow: hidden;}
+		section #content > div > div:first-child{float: left;width: 68%;height: 100%;text-align: center;}
+		section #content > div > div:last-child{float: right;width: 28%;height: 100%;text-align: left;font-size: 1.2rem;padding-top: 8%;}
+		section #content .top{width: 100%;height: auto;padding: 1rem;font-size: 2rem;font-weight: bold;text-align: center;}
+		section #content .bottom{position: relative;width: 100%;height: auto;overflow: hidden;line-height: 3.6rem;}
+		section #content .bottom a{position: absolute;display: inline-block;width: 30%;height: 20%;right: 0;bottom: 0;
+			background-color: red;text-align: center;
+			color: white;font-size: 1.4rem;border-top: 2px solid white;border-bottom: 2px solid white;border-left: 2px solid white;border-radius: 25px 0 0 25px;}
+	/*footer*/
+		footer{width: 100%;height: auto;padding: 2% 0;text-align: center;background-color: black;color: white;}
+		footer .contact{font-size: 1rem;}
+		footer .contact a{color: white;}
+		footer form{font-size: 1.4rem;width: 50%;margin: 0 auto;text-align: left;}
+		footer button{margin-top: 1%;}
+		footer .copyright{font-size: 0.6rem;}
+}
+
+
+
+/*大于1024px*/
+@media  screen  and (min-width: 1024px)  {
+
+	/*header*/
+		header{width: 100%;height: 140px;position: fixed;overflow: hidden;z-index: 99;text-align: center;}
+		/* nav */	
+		#nav{width: 100%;height: 50%;background-color: black;}
+		#nav ul{width: 60%;height: 100%;margin: 0 auto;}
+		#nav ul li{float: left;width: 25%;height: 100%;line-height: 70px;}
+		#nav ul li a{display: inline-block;width: 100%;height: 100%;font-size: 1.6rem;color: white;}
+		#nav ul li a:hover{font-size: 2rem;}
+		#navbar{width: 100%;height: 50%;background-color: rgba(237, 237, 237,0.6);}
+		#navbar ul{width: 45%;height: 100%;margin: 0 auto;}
+		#navbar ul li{float: left;width: 25%;height: 100%;line-height: 70px;}
+		#navbar ul li a{display: inline-block;width: 100%;height: 100%;font-size: 1.6rem;color: white;}
+		#navbar ul li a:hover{text-decoration: none;background-color: #363636;}
+		#navbar ul li i{display: inline-block;margin-right: 0.5rem;} 
+		#navbar ul .check{background-color: #363636;}
+		#light{
+			-webkit-animation: shinning 2s infinite ease-in-out;
+			animation: shinning 2s infinite ease-in-out;
+		}
+
+		@-webkit-keyframes shinning{
+			0%{color: red;opacity: 1;}
+			30%{color: #EEC900;opacity: 1;}
+			60%{color: #008B00;opacity: 1;}
+			100%{color :#8B008B;opacity: 1;}
+		}
+		@keyframes shinning{
+			0%{color: red;opacity: 1;}
+			30%{color: #EEC900;opacity: 1;}
+			60%{color: #008B00;opacity: 1;}
+			100%{color :#8B008B;opacity: 1;}
+		}    
+	/* section */
+		section{width: 100%;height: auto;background-color: #003366;overflow: hidden;z-index: -1;}
+		section #content{position: relative;width: 68%;height: auto;margin: 140px auto 0;padding: 3%;background-color: white;}
+		section #content > div{height: auto;margin-bottom: 2%;padding-bottom: 2%;border-bottom: 4px solid #363636;overflow: hidden;}
+		section #content > div > div:first-child{float: right;width: 68%;height: 100%;text-align: center;}
+		section #content > div > div:last-child{float: left;width: 28%;height: 100%;text-align: left;font-size: 1.6rem;padding-top: 8%;}
+		section #content .top{width: 100%;height: auto;padding: 1rem;font-size: 2.2rem;font-weight: bold;text-align: center;}
+		section #content .bottom{position: relative;width: 100%;height: auto;overflow: hidden;line-height: 3.6rem;}
+		section #content .bottom img{
+			transition: transform 1s;
+			-moz-transition: transform 1s; /*Firefox 4*/
+			-webkit-transition: transform 1s;  /*safari 和 Chrome*/
+			-o-transition: transform 1s;  /*Opera*/
+		}
+		section #content .bottom img:hover{
+			transform: scale(1.2);
+			-ms-transform: scale(1.2);	/* IE 9 */
+			-webkit-transform: scale(1.2);	/* Safari 和 Chrome */
+			-o-transform: scale(1.2);	/* Opera */
+			-moz-transform: scale(1.2);	/* Firefox */
+		}
+		section #content .bottom a{position: absolute;display: inline-block;width: 18%;height: 10%;right: 0;bottom: 0;
+			background-color: red;text-align: center;
+			color: white;font-size: 1.4rem;border-top: 2px solid white;border-bottom: 2px solid white;border-left: 2px solid white;border-radius: 25px 0 0 25px;
+			transition: width 1s;
+			-moz-transition: width 1s;
+			-webkit-transition: width 1s;
+			-o-transition: width 1s;}
+		section #content .bottom a:hover{text-decoration: none;width: 24%;}
+	/*footer*/
+		footer{width: 100%;height: auto;padding: 2% 0;text-align: center;background-color: black;color: white;}
+		footer .contact{font-size: 1rem;}
+		footer .contact a{color: white;}
+		footer form{font-size: 1.4rem;width: 50%;margin: 0 auto;text-align: left;}
+		footer button{margin-top: 1%;}
+		footer .copyright{font-size: 0.6rem;}
+}

@@ -1,0 +1,91 @@
+/* IE6/7/8 */
+@media \0screen\,screen\9{
+    body{width: 100%;height: 100%;}
+    header .bottomline{border-bottom: 3px solid #EEA9B8;}   
+    .banner{width: 100%;height: 500px;background:url(../images/homeimg/sectionbgimg3.jpg) no-repeat top center;}
+    section{width: 100%;height: auto;margin-top: 5%;text-align: center;overflow: hidden;}
+    section h2{color: #f10180;}
+    section hr{border: 1px solid gray;}
+    section .wrapper{width: 1280px;height: auto;margin: 0 auto;margin-top: 2%;overflow: hidden;}
+    section .wrapper .content{width: 100%;height: auto;}
+    section .wrapper .news ul{width: 100%;height: 100%;}
+    section .wrapper .news li{float: left;width: 20%;height: 100%;margin-left: 4%;margin-bottom: 4%;}
+    section .wrapper .news li a{display: inline-block;width: 100%;height: 100%;}
+    section .wrapper .news li a:hover{border: 4px solid #EE1289;}
+
+    /*分页*/
+    #pageGro{width: 450px;height: 25px;margin: 0 auto;padding-top: 30px;margin-bottom: 60px;}
+    #pageGro div,#pageGro div ul li{font-size: 12px;color: #999;line-height: 23px;float: left;margin-left: 5px;}
+    #pageGro div ul li{width: 22px;text-align: center;border: 1px solid #999;cursor: hand;}
+    #pageGro div ul li .on{color: #fff;background: #3c90d9;border: 1px solid #3c90d9;}
+    #pageGro .pageUp,#pageGro .pageDown,#pageGro .pagestart,#pageGro .pageend{width: 63px;border: 1px solid #999;cursor: hand;}
+}
+
+/* iphone */
+@media  screen  and (min-width: 320px) and (max-width: 767px)  {
+
+	body{width: 100%;height: 100%;}
+	header .bottomline{background-color: #EEA9B8;}	
+    .banner{width: 100%;height: 150px;margin-top: 5%;background:url(../images/homeimg/sectionbgimg3.jpg) no-repeat top center;background-size: 100%;}
+    section{width: 100%;height: auto;margin-top: 1%;text-align: center;}
+    section h2{color: #f10180;}
+    section hr{border: 1px solid gray;}
+    section .wrapper{width: 95%;height: auto;margin: 0 auto;overflow: hidden;}
+    section .wrapper .content{width: 100%;height: auto;}
+    section .wrapper .news ul{width: 100%;height: 100%;}
+    section .wrapper .news li{float: left;width: 45%;height: 100%;margin: 2%;}
+    section .wrapper .news li a{display: inline-block;width: 100%;height: 100%;}
+    section .wrapper .news li a:active{border: 4px solid #EE1289;}
+    /*分页*/
+    #pageGro{width: 90%;height: 25px;margin: 0 auto;padding-top: 30px;margin-bottom: 60px;}
+    #pageGro div,#pageGro div ul li{font-size: 12px;color: #999;line-height: 23px;float: left;margin-left: 5px;}
+    #pageGro div ul li{width: 22px;text-align: center;border: 1px solid #999;cursor: pointer;}
+    #pageGro div ul li .on{color: #fff;background: #3c90d9;border: 1px solid #3c90d9;}
+    #pageGro .pageUp,#pageGro .pageDown,#pageGro .pagestart,#pageGro .pageend{width: 63px;border: 1px solid #999;cursor: pointer;}
+}
+
+/* iPad */
+@media  screen  and (min-width: 768px) and (max-width: 1023px){
+
+	body{width: 100%;height: 100%;}
+	header .bottomline{border-bottom: 3px solid #EEA9B8;}	
+    .banner{width: 100%;height: auto;background:url(../images/homeimg/sectionbgimg3.jpg) no-repeat top center;background-size: 100%;}
+    section{width: 100%;height: auto;margin-top: -10%;text-align: center;overflow: hidden;}
+    section h2{color: #f10180;}
+    section hr{border: 1px solid gray;}
+    section .wrapper{width: 85%;height: auto;margin: 0 auto;overflow: hidden;}
+    section .wrapper .content{width: 100%;height: auto;}
+    section .wrapper .news ul{width: 100%;height: 100%;}
+    section .wrapper .news li{float: left;width: 20%;height: 100%;margin-left: 4%;margin-bottom: 4%;}
+    section .wrapper .news li a{display: inline-block;width: 100%;height: 100%;}
+    section .wrapper .news li a:hover{border: 4px solid #EE1289;}
+
+    /*分页*/
+    #pageGro{width: 50%;height: 25px;margin: 0 auto;padding-top: 30px;margin-bottom: 60px;}
+    #pageGro div,#pageGro div ul li{font-size: 12px;color: #999;line-height: 23px;float: left;margin-left: 5px;}
+    #pageGro div ul li{width: 22px;text-align: center;border: 1px solid #999;cursor: pointer;}
+    #pageGro div ul li .on{color: #fff;background: #3c90d9;border: 1px solid #3c90d9;}
+    #pageGro .pageUp,#pageGro .pageDown,#pageGro .pagestart,#pageGro .pageend{width: 63px;border: 1px solid #999;cursor: pointer;}
+}
+
+/*大于1024px*/
+@media  screen  and (min-width: 1024px)  {	
+	header .bottomline{border-bottom: 3px solid #EEA9B8;}	
+    .banner{width: 100%;height: 500px;background:url(../images/homeimg/sectionbgimg3.jpg) no-repeat top center;}
+    section{width: 100%;height: auto;margin-top: 5%;text-align: center;overflow: hidden;}
+    section h2{color: #f10180;}
+    section hr{border: 1px solid gray;}
+    section .wrapper{width: 1020px;height: auto;margin: 0 auto;margin-top: 2%;overflow: hidden;}
+    section .wrapper .content{width: 100%;height: auto;}
+    section .wrapper .news ul{width: 100%;height: 100%;}
+    section .wrapper .news li{float: left;width: 20%;height: 100%;margin-left: 4%;margin-bottom: 4%;}
+    section .wrapper .news li a{display: inline-block;width: 100%;height: 100%;}
+    section .wrapper .news li a:hover{border: 4px solid #EE1289;}
+
+    /*分页*/
+    #pageGro{width: 450px;height: 25px;margin: 0 auto;padding-top: 30px;margin-bottom: 60px;}
+    #pageGro div,#pageGro div ul li{font-size: 12px;color: #999;line-height: 23px;float: left;margin-left: 5px;}
+    #pageGro div ul li{width: 22px;text-align: center;border: 1px solid #999;cursor: pointer;}
+    #pageGro div ul li .on{color: #fff;background: #3c90d9;border: 1px solid #3c90d9;}
+    #pageGro .pageUp,#pageGro .pageDown,#pageGro .pagestart,#pageGro .pageend{width: 63px;border: 1px solid #999;cursor: pointer;}
+}
