@@ -6,6 +6,7 @@
 	box-sizing: border-box;}
  	body{font-size: 62.5%;font-family: "微软雅黑";}
  	body a{text-decoration: none;}
+ 	body a:visited{text-decoration: none;}
  	body a:hover{text-decoration: none;}
  	body a:active{color: #EE30A7;}
 	li{list-style-type: none;}
@@ -16,18 +17,21 @@
 @media  screen  and (min-width: 320px) and (max-width: 767px)  {
 	img{max-width: 100%;width: auto;}
 	/*header*/
-		header{width: 100%;height: 10%;position: fixed;overflow: hidden;z-index: 99;text-align: center;top: 0}
+		header{width: 100%;height: 10%;position: fixed;overflow: hidden;z-index: 99;-moz-z-index: 99;-webkit-z-index: 99;-o-z-index: 99;-ms-z-index: 99;text-align: center;top: 0}
 		/* nav */	
 		#nav{width: 100%;height: 100%;background-color: black;}
 		#nav ul{width: 100%;height: 100%;margin: 0 auto;}
 		#nav ul li{float: left;width: 25%;height: 100%;padding-top: 6%;}
 		#nav ul li a{display: inline-block;width: 100%;height: 100%;font-size: 1.6rem;color: white;}
-		#nav ul li a:active{font-size: 1.6rem;}
+		#nav ul li:visited{background-color: gray;color: white;}
+		#nav ul li:active{background-color: gray;color: white;}
 		/*fixed*/	
-		.fixed{position: fixed;left: 0;bottom: 0;width: 100%;height: 12%;background-color: #003366;z-index: 99;}
-		.fixed ul{width: 100%;height: 100%;margin: 0 auto;border-top: 1px solid white;}
-		.fixed ul li{float: left;width: 20%;height: 100%;border: 1px solid white;text-align: center;padding-top: 8%;}	
-		.fixed ul li a{display: inline-block;width: 100%;height: 100%;color: #EBEBEB;font-size: 1.4rem;}
+		.fixed{position: fixed;left: 0;top: 10%;width: 100%;height: 10%;background-color: #003366;z-index: 99;-moz-z-index: 99;-webkit-z-index: 99;-o-z-index: 99;-ms-z-index: 99;}
+		.fixed ul{width: 100%;height: 100%;border-top: 1px solid white;}
+		.fixed ul li{float: left;width: 20%;height: 100%;border: 1px solid white;text-align: center;padding-top: 6%;}	
+		.fixed ul li a{display: inline-block;width: 100%;height: 100%;color: white;font-size: 1.2rem;}
+		.fixed ul li:visited{background-color: #003399;}
+		.fixed ul li:active{background-color: #003399;}
 	/*footer*/
 		footer{width: 100%;height: auto;padding: 2% 0 14% 0;text-align: center;background-color: black;color: white;}
 		footer .contact{font-size: 1rem;}
@@ -39,18 +43,18 @@
 	#bgimg{background: url(../images/bgimg.jpg)no-repeat bottom;width: 100%;height: 170px;background-size: 100%;}
 
 	/*section*/
-	section{width: 100%;height: auto;overflow: hidden;margin-top: 10%;}
+	section{width: 100%;height: auto;overflow: hidden;margin-top: 20%;}
 		.topimg{width: 90%;margin: 0 auto;}
 		.topimg img{width: 100%;height: 100%;}
 		.topimg > div {width: 100%;height: auto;background-color: green;}
 		.topimg > div > div{position: relative;overflow: hidden;float: left;width: 30%;height: 100%;margin-top: -10%;border: 3px solid #003366;margin-bottom: 11%;}
 		.topimg > div > div:first-child{margin-right: 4%;}
 		.topimg > div > div:last-child{margin-left: 4%;}
-		.topimg > div > div span{position: absolute;display: block;display: none;width: 100%;height: 50%;bottom: 0;left: 0;background: rgba(255, 255, 240,0.7);z-index: 9999;text-align: center;}
+		.topimg > div > div span{position: absolute;display: block;display: none;width: 100%;height: 50%;bottom: 0;left: 0;background: rgba(255, 255, 240,0.7);z-index: 9999;-moz-z-index: 9999;-webkit-z-index: 9999;-o-z-index: 9999;-ms-z-index: 9999;text-align: center;}
 		.topimg > div > div span p{font-size: 1.4rem;font-weight: bold;color: black;margin-top: 18%;}
-		.content{width: 98%;margin: 5% auto;}
-		.content h2{margin: 0 auto;color: black;margin-bottom: 4%;padding-top: 20%;}
-		.content > div{overflow: hidden;width: 100%;height: auto;text-align: center;}
+		.content{width: 98%;margin: 0 auto;}
+		.content h2{margin: 0 auto;color: black;margin-bottom: 4%;padding-top: 40%;}
+		.content > div{overflow: hidden;width: 100%;height: auto;text-align: center;margin-top: -24%;}
 		.content > div > div{width: 100%;height: auto;}
 		.content > div > div > div{float: left;width: 100%;height: auto;margin-bottom: 6%;}
 		.content > div > div > div > div{position: relative;width: 45%;height: 100%;margin: 0 2%;;box-shadow: 5px 10px 5px 5px #B0B0B0;}
@@ -77,7 +81,7 @@
 @media  screen  and (min-width: 768px) and (max-width: 1023px){
 	img{max-width: 100%;width: auto;}
 	/*header*/
-		header{width: 100%;height: 120px;position: fixed;overflow: hidden;z-index: 99;text-align: center;}
+		header{width: 100%;height: 120px;position: fixed;overflow: hidden;z-index: 99;-moz-z-index: 99;-webkit-z-index: 99;-o-z-index: 99;-ms-z-index: 99;text-align: center;}
 		/* nav */	
 		#nav{width: 100%;height: 60%;background-color: black;}
 		#nav ul{width: 100%;height: 100%;margin: 0 auto;}
@@ -92,7 +96,7 @@
 		footer button{margin-top: 1%;}
 		footer .copyright{font-size: 0.6rem;}
 	/*fixed*/	
-		.fixed{position: fixed;left: 0;top: 20%;width: 12%;height: 400px;z-index: 9999;}
+		.fixed{position: fixed;left: 0;top: 20%;width: 12%;height: 400px;z-index: 9999;-moz-z-index: 9999;-webkit-z-index: 9999;-o-z-index: 9999;-ms-z-index: 9999;}
 		.fixed ul{width: 100%;height: 100%;}
 		.fixed ul li{float: left;width: 100%;height: 14%;margin-bottom: 5%;background-color: rgba(0, 51, 102,0.8);}
 		.fixed ul li a{display: block;width: 100%;height: 100%;line-height: 67.2px;font-size: 1.6rem;color: white;text-align: center;}
@@ -108,7 +112,7 @@
 		.topimg > div > div{position: relative;overflow: hidden;float: left;width: 28%;height: 100%;margin-top: -10%;border: 5px solid #003366;margin-bottom: 11%;}
 		.topimg > div > div:first-child{margin-right: 8%;}
 		.topimg > div > div:last-child{margin-left: 8%;}
-		.topimg > div > div span{position: absolute;display: block;display: none;width: 100%;height: 50%;bottom: 0;left: 0;background: rgba(255, 255, 240,0.7);z-index: 9999;text-align: center;}
+		.topimg > div > div span{position: absolute;display: block;display: none;width: 100%;height: 50%;bottom: 0;left: 0;background: rgba(255, 255, 240,0.7);z-index: 9999;-moz-z-index: 9999;-webkit-z-index: 9999;-o-z-index: 9999;-ms-z-index: 9999;text-align: center;}
 		.topimg > div > div span p{font-size: 1.4rem;font-weight: bold;color: black;margin-top: 18%;}		
 		.content{width: 98%;margin: 5% auto;}
 		.content h2{margin: 0 auto;color: black;margin-bottom: 4%;padding-top: 16%;}
@@ -138,7 +142,7 @@
 /*大于1024px*/
 @media  screen  and (min-width: 1024px)  {
 	/*header*/
-		header{width: 100%;height: 140px;position: fixed;overflow: hidden;z-index: 99;text-align: center;}
+		header{width: 100%;height: 140px;position: fixed;overflow: hidden;z-index: 99;-moz-z-index: 99;-webkit-z-index: 99;-o-z-index: 99;-ms-z-index: 99;text-align: center;}
 		/* nav */	
 		#nav{width: 100%;height: 50%;background-color: black;}
 		#nav ul{width: 60%;height: 100%;margin: 0 auto;}
@@ -154,7 +158,7 @@
 		footer button{margin-top: 1%;}
 		footer .copyright{font-size: 0.6rem;}
 	/*fixed*/	
-		.fixed{position: fixed;left: 0;top: 20%;width: 12%;height: 400px;z-index: 9999;}
+		.fixed{position: fixed;left: 0;top: 20%;width: 12%;height: 400px;z-index: 9999;-moz-z-index: 9999;-webkit-z-index: 9999;-o-z-index: 9999;-ms-z-index: 9999;}
 		.fixed ul{width: 100%;height: 100%;}
 		.fixed ul li{float: left;width: 100%;height: 14%;margin-bottom: 5%;background-color: rgba(0, 51, 102,0.8);}
 		.fixed ul li a{display: block;width: 100%;height: 100%;line-height: 67.2px;font-size: 1.6rem;color: white;text-align: center;}
@@ -168,7 +172,7 @@
 		.topimg > div > div{position: relative;overflow: hidden;float: left;width: 28%;height: 100%;margin-top: -10%;border: 5px solid #003366;margin-bottom: 11%;}
 		.topimg > div > div:first-child{margin-right: 8%;}
 		.topimg > div > div:last-child{margin-left: 8%;}
-		.topimg > div > div span{position: absolute;display: block;display: none;width: 100%;height: 50%;bottom: 0;left: 0;background: rgba(255, 255, 240,0.7);z-index: 9999;text-align: center;}
+		.topimg > div > div span{position: absolute;display: block;display: none;width: 100%;height: 50%;bottom: 0;left: 0;background: rgba(255, 255, 240,0.7);z-index: 9999;-moz-z-index: 9999;-webkit-z-index: 9999;-o-z-index: 9999;-ms-z-index: 9999;text-align: center;}
 		.topimg > div > div span p{font-size: 1.4rem;font-weight: bold;color: black;margin-top: 18%;}
 		
 		.content{width: 1100px;margin: 5% auto;}

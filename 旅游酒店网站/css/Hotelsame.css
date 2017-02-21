@@ -16,13 +16,14 @@
 @media  screen  and (min-width: 320px) and (max-width: 767px)  {
 	img{max-width: 100%;width: auto;}
 	/*header*/
-		header{width: 100%;height: 120px;position: fixed;overflow: hidden;z-index: 99;text-align: center;}
+		header{width: 100%;height: 120px;position: fixed;overflow: hidden;z-index: 99;-moz-z-index: 99;-webkit-z-index: 99;-o-z-index: 99;-ms-z-index: 99;text-align: center;}
 		/* nav */	
 		#nav{width: 100%;height: 60%;background-color: black;}
 		#nav ul{width: 100%;height: 100%;margin: 0 auto;}
 		#nav ul li{float: left;width: 25%;height: 100%;line-height: 72px;}
+		#nav ul li:visited{background-color: gray;color: white;}
+		#nav ul li:active{background-color: gray;color: white;}
 		#nav ul li a{display: inline-block;width: 100%;height: 100%;font-size: 1.6rem;color: white;}
-		#nav ul li a:active{font-size: 1.8rem;}
 		#navbar{width: 100%;height: 40%;background-color: #363636;}
 		#navbar ul{width: 100%;height: 100%;margin: 0 auto;}
 		#navbar ul li{float: left;width: 25%;height: 100%;line-height: 48px;}
@@ -48,7 +49,7 @@
 			100%{color :#8B008B;opacity: 1;}
 		} 
 	/* section */
-		section{width: 100%;height: auto;overflow: hidden;z-index: -1;}
+		section{width: 100%;height: auto;overflow: hidden;z-index: -1;-moz-z-index: -1;-webkit-z-index: -1;-o-z-index: -1;-ms-z-index: -1;}
 		section #content{position: relative;width: 100%;height: auto;margin: 120px auto 0;padding: 2%;background-color: white;}
 		section #content > div{height: auto;margin-bottom: 2%;padding-bottom: 2%;border-bottom: 4px solid #363636;overflow: hidden;}
 		section #content > div > div:first-child{width: 100%;height: 100%;text-align: center;font-size: 1.2rem;padding-top: 8%;}
@@ -69,7 +70,7 @@
 @media  screen  and (min-width: 768px) and (max-width: 1023px){
 	img{max-width: 100%;width: auto;}
 	/*header*/
-		header{width: 100%;height: 120px;position: fixed;overflow: hidden;z-index: 99;text-align: center;}
+		header{width: 100%;height: 120px;position: fixed;overflow: hidden;z-index: 99;-moz-z-index: 99;-webkit-z-index: 99;-o-z-index: 99;-ms-z-index: 99;text-align: center;}
 		/* nav */	
 		#nav{width: 100%;height: 60%;background-color: black;}
 		#nav ul{width: 100%;height: 100%;margin: 0 auto;}
@@ -101,7 +102,7 @@
 			100%{color :#8B008B;opacity: 1;}
 		} 
 	/* section */
-		section{width: 100%;height: auto;background-color: #003366;overflow: hidden;z-index: -1;}
+		section{width: 100%;height: auto;background-color: #003366;overflow: hidden;z-index: -1;-moz-z-index: -1;-webkit-z-index: -1;-o-z-index: -1;-ms-z-index: -1;}
 		section #content{position: relative;width: 80%;height: auto;margin: 120px auto 0;padding: 3%;background-color: white;}
 		section #content > div{height: auto;margin-bottom: 2%;padding-bottom: 2%;border-bottom: 4px solid #363636;overflow: hidden;}
 		section #content > div > div:first-child{float: left;width: 68%;height: 100%;text-align: center;}
@@ -126,7 +127,7 @@
 @media  screen  and (min-width: 1024px)  {
 
 	/*header*/
-		header{width: 100%;height: 140px;position: fixed;overflow: hidden;z-index: 99;text-align: center;}
+		header{width: 100%;height: 140px;position: fixed;overflow: hidden;z-index: 99;-moz-z-index: 99;-webkit-z-index: 99;-o-z-index: 99;-ms-z-index: 99;text-align: center;}
 		/* nav */	
 		#nav{width: 100%;height: 50%;background-color: black;}
 		#nav ul{width: 60%;height: 100%;margin: 0 auto;}
@@ -158,7 +159,7 @@
 			100%{color :#8B008B;opacity: 1;}
 		}    
 	/* section */
-		section{width: 100%;height: auto;background-color: #003366;overflow: hidden;z-index: -1;}
+		section{width: 100%;height: auto;background-color: #003366;overflow: hidden;z-index: -1;-moz-z-index: -1;-webkit-z-index: -1;-o-z-index: -1;-ms-z-index: -1;}
 		section #content{position: relative;width: 68%;height: auto;margin: 140px auto 0;padding: 3%;background-color: white;}
 		section #content > div{height: auto;margin-bottom: 2%;padding-bottom: 2%;border-bottom: 4px solid #363636;overflow: hidden;}
 		section #content > div > div:first-child{float: right;width: 68%;height: 100%;text-align: center;}
