@@ -6,8 +6,9 @@
 	box-sizing: border-box;}
  	body{font-size: 62.5%;font-family: "微软雅黑";}
  	body a{text-decoration: none;}
+ 	body a:visited{text-decoration: none;}
  	body a:hover{text-decoration: none;}
- 	body a:active{color: #EE30A7;text-decoration: none;}
+ 	body a:active{text-decoration: none;}
 	li{list-style-type: none;}
 	img{border: 0;max-width: 100%;width: auto;}
 	header,footer,article,aside,section,nav{display:block}  /* 支持HTML5标签 */
@@ -48,7 +49,7 @@
 
 /* iphone */
 @media  screen  and (min-width: 320px) and (max-width: 767px)  {
-	body{width: 100%;height: 100%;}
+	body{width: 100%;height: 100%;overflow: scroll;-webkit-overflow-scrolling: touch;/*滚动开启弹性滚动*/}
 	/*header*/
  	header{position: relative;width: 100%;height: 10%;overflow: hidden;margin-top: 1rem;}
  	header > div{width: 100%;height: auto;margin-bottom: 4rem;text-align: center;color: #3D3D3D;}
@@ -58,6 +59,7 @@
 	header > div > div:last-child span{float: left;display: inline-block;width: 45%;height: auto;color: #4F4F4F;font-size: 1.2rem;}
  	header > div > div:last-child a{float: right;display: inline-block;width: 15%;height: auto;margin-right: 2%;}
  	header > div > div:last-child a > i{display: inline-block;width: 100%;height: 100%;padding: 1rem;color: #292929;border: 1px solid #292929;font-size: 2rem;}
+ 	header > div > div:last-child i:active{color: gray;}
  	header nav{position: fixed;top: 0;clear: both;width: 100%;height: 40px;line-height: 40px;background-color: #f10180;
  	z-index: 99999;
  	-moz-z-index: 99999;
@@ -70,24 +72,14 @@
  	header nav a{display: inline-block;width: 100%;height: 100%;text-align: center;color: white;font-weight: bold;font-size: 1.4rem;}
  	header nav a:active{text-decoration: none;color: white;}
 	/*fixednav*/
-	#fixednav{position: fixed;right: 0;bottom: 0;width: 12%;height: 36%;background-color: white;border: 1px solid #292929;
-	z-index: 999; 
-	-moz-z-index: 999;
-	-webkit-z-index: 999;
-	-o-z-index: 999;
-	-ms-z-index: 999;
-	-khtml-z-index: 999;}
-	#fixednav a{display: block;width: 100%;height: 25%;line-height: 5rem;text-align: center;color: #292929;border: 1px solid #292929;font-size: 2rem;}
-	#fixednav .fixednav1{top: 64%;width: 32%;}
-	#fixednav .fixednav2{position: fixed;display: block;top: 73%;right: 12%;}
-	#fixednav .fixednav3{top: 82%;width: 45%;}
-	#fixednav .fixednav3,#fixednav .fixednav1{position: fixed;display: block;right: 12%;padding: 1rem;font-weight: bold;color: white;background-color: #292929;font-size: 2rem;}
+	#fixednav{display: none;}
 	/*footer*/
 	footer{width: 100%;height: 20%;background-color: #C4C4C4;padding-top: 20px;padding-bottom: 2%;text-align: center;}
 	footer > div:first-child{width: 100%;height: auto;margin: 0 auto;margin-bottom: 1rem;}
-	footer ul{width: 100%;margin: 0 auto;}
-	footer li{margin-bottom: 0.8rem;color: black;font-size: 1.4rem;}
-	footer a{color: black;text-decoration: underline;color: #f10180;font-size: 1.4rem;}
+	footer ul{width: 45%;margin: 0 auto;text-align: left;color: black;}
+	footer li{margin-bottom: 0.8rem;font-size: 1.4rem;}
+	footer a{color: black;font-size: 1.4rem;}
+	footer a:active{color: #f10180;}
 	footer > div:last-child{margin: 0 auto;width: 100%;color: black;margin-top: 5%;font-size: 1.2rem;}
 	footer hr{color: white;}
 }
@@ -101,6 +93,7 @@
  	header > div > div:first-child{width: 100%;height: 30%;margin-bottom: 2rem;margin-top: 2rem;}
  	header > div > div:last-child{width: 100%;height: 30%;font-weight: bold;font-size: 2.6rem;}
  	header > div > div:last-child i{display: inline-block;margin-left: 1rem;color: #292929;font-size: 2.2rem;border: 1px solid #292929; padding: 1.4rem;}
+ 	header > div > div:last-child i:active{color: gray;}
  	header nav{width: 100%;height: 60px;line-height: 58px;background-color: #f10180;}
  	header ul{width: 100%;height: 100%;text-align: center;margin-top: 2rem;}
  	header ul li{float: left;display:inline-block;width: 20%;height: 100%;}
@@ -114,6 +107,7 @@
 	-ms-z-index: 999;
 	-khtml-z-index: 999;}
 	#fixednav a{display: block;width: 100%;height: 25%;line-height: 70px;text-align: center;color: white;}
+	#fixednav a:active{color: #FFC0CB;}
 	#fixednav .fixednav1{top: 40%;width: 140px;}
 	#fixednav .fixednav2{position: fixed;display: block;right: 10%;top: 45%;padding: 2rem;}
 	#fixednav .fixednav3{top: 52%;width: 170px;}
@@ -122,10 +116,12 @@
 	footer{width: 100%;height: 20%;padding-top: 20px;padding-bottom: 2%;background-color: #C4C4C4;text-align: center;}
 	footer > div:first-child{width: 100%;height: auto;margin: 0 auto;margin-bottom: 1rem;}
 	footer ul{width: 100%;margin: 0 auto;}
-	footer li{width: 100%;height: 100%;margin-bottom: 0.8rem;color: black;font-size: 1.4rem;}
-	footer a{display: inline-block;width: 100%;height: 100%;color: black;text-decoration: underline;color: #f10180;font-size: 1.4rem;}
+	footer li{width: 100%;height: 100%;margin-bottom: 0.8rem;color: black;font-size: 1.4rem;color: black;}
+	footer a{color: black;font-size: 1.4rem;text-decoration: none;}
+	footer a:active{color: #f10180;}
 	footer > div:last-child{width: 100%;margin: 5% auto 0;color: black;font-size: 1.2rem;}
 	footer hr{color: white;}
+	#arrowTop,#fixed_onphone{display: none;}
 }
 
 /*大于1024px*/
@@ -166,4 +162,5 @@
 	#fixednav .fixednav2{position: fixed;display: block;right: 4%;top: 47%;padding: 2rem;height: auto;}
 	#fixednav .fixednav3{top: 54%;width: 160px;}
 	#fixednav .fixednav3,#fixednav .fixednav1{position: fixed;display: block;right: 6%;height: auto;padding: 1rem;font-weight: bold;color: #EE1289;border: 4px solid #878787;font-size: 1.8rem;}
+	#arrowTop,#fixed_onphone{display: none;}
 }

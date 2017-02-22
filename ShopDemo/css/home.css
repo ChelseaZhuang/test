@@ -27,7 +27,7 @@
 
 /* iphone */
 @media  screen  and (min-width: 320px) and (max-width: 767px)  {
-	body{width: 100%;height: 100%;}
+	body{width: 100%;height: 100%;overflow: scroll;-webkit-overflow-scrolling: touch;/*滚动开启弹性滚动*/}
    	.slider-wrapper{width: 100%;height: auto;overflow: hidden;} /*轮播图*/ 
 	section{width: 100%;height: auto;}
 		.content{width: 100%;overflow: hidden;padding: 0 10%;overflow: hidden;}
@@ -40,6 +40,7 @@
 		.content .release > div > div{width: 100%;height: 160px;margin-bottom: 2rem;}
 		.content .box{width: 100%;height: 100%;line-height: 15rem;background-color: rgba(36, 36, 36,0.4);} 
 		.content .release a{display: inline-block;color: #f10180;font-size: 2.2rem;font-weight: bold;text-shadow: 0 2px 2px black;}
+		.content .release .box:active{background-color: rgba(36, 36, 36,0.6);}
 		.content .release .pic1{background: url(../images/homeimg/waitao.jpg) no-repeat center;background-size: 100% 100%;}
 		.content .release .pic2{background: url(../images/homeimg/bao.jpg) no-repeat center;background-size: 100% 100%;}
 		.content .release .pic3{background: url(../images/homeimg/huazhuangpin.jpg) no-repeat center;background-size: 100% 100%;}

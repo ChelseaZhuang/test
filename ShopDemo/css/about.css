@@ -11,8 +11,7 @@
 }
  /* iphone */
 @media  screen  and (min-width: 320px) and (max-width: 767px)  {
-
-	body{width: 100%;height: 100%;}
+	body{width: 100%;height: 100%;overflow: scroll;-webkit-overflow-scrolling: touch;/*滚动开启弹性滚动*/}
 	header .bottomline{background-color: #EEA9B8;}
 	section{width: 100%;height: 540px;background: url(../images/homeimg/contactbgimg.jpg) repeat center top;}
 	section .box{width: 100%;height: 100%;background-color: rgba(33,33,33,0.8);padding-top: 20%;}
@@ -21,10 +20,8 @@
 	section .box h3{color: #f10180;font-weight: bold;}
 	section .box p{color: white;font-size: 1rem;text-align: left;text-indent: 2.8rem;letter-spacing: 0.3rem;line-height: 2rem;}
 }
-
 /* iPad */
 @media  screen  and (min-width: 768px) and (max-width: 1023px){
-
 	body{width: 100%;height: 100%;}
 	header .bottomline{border-bottom: 3px solid #EEA9B8;}
 	section{width: 100%;height: 800px;background: url(../images/homeimg/contactbgimg.jpg) repeat center top;}
@@ -34,7 +31,6 @@
 	section .box h3{color: #f10180;font-weight: bold;}
 	section .box p{color: white;font-size: 1.8rem;text-align: left;text-indent: 3.6rem;letter-spacing: 0.6rem;line-height: 2.2rem;}
 }
-
 /*大于1024px*/
 @media  screen  and (min-width: 1024px)  {
 	header .bottomline{border-bottom: 3px solid #EEA9B8;}	

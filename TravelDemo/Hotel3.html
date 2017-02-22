@@ -26,10 +26,10 @@
     </nav>
 	<nav id="navbar">
 		<ul>
-			<li><a href="Hotel.html" id="light"><i class="fa fa-thumbs-o-up"></i>世界著名酒店</a></li>
-			<li><a href="Hotel2.html">奢华高级酒店</a></li>
-			<li><a href="#" class="check">豪华酒店</a></li>
-			<li><a href="Hotel4.html">经济连锁酒店</a></li>
+			<li><a href="Hotel.html" id="light" target="_self"><i class="fa fa-thumbs-o-up"></i>世界著名酒店</a></li>
+			<li><a href="Hotel2.html" target="_self">奢华高级酒店</a></li>
+			<li><a href="#" class="check" target="_self">豪华酒店</a></li>
+			<li><a href="Hotel4.html" target="_self">经济连锁酒店</a></li>
 		</ul>
 	</nav>    
 </header>
@@ -145,16 +145,16 @@
 	<script src="./js/bootstrap.min.js"></script> <!-- bootstrap -->
 	<script>
 	$(document).ready(function(){ 
-	$('#contact').click(function(){ 
-		$('html, body').animate({
-			scrollTop: $(document).height()
-			}, 600); 
-		return false; 
-		}); 
+		$('#contact').click(function(){ 
+			$('html, body').animate({
+				scrollTop: $(document).height()
+				}, 600); 
+			return false; 
+			}); 
 	}); 	//点击导航中contact滚动到页面底部
 	</script>
 	<script>
-	document.body.addEventListener('touchstart',function(){}); //touchstart事件
+		document.body.addEventListener('touchstart',function(){}); //touchstart事件
 	</script>
 </body>
 </html>

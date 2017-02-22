@@ -8,7 +8,7 @@
  	body a{text-decoration: none;}
  	body a:visited{text-decoration: none;}
  	body a:hover{text-decoration: none;}
- 	body a:active{color: #EE30A7;}
+ 	body a:active{text-decoration: none;color: #EE30A7;}
 	li{list-style-type: none;}
 	img{border: 0;max-width: 100%;width: auto;}
 	header,footer,article,aside,section,nav{display:block}  /* 支持HTML5标签 */
@@ -16,29 +16,30 @@
 /* iphone */
 @media  screen  and (min-width: 320px) and (max-width: 767px)  {
 	img{max-width: 100%;width: auto;}
+	body{overflow: scroll;-webkit-overflow-scrolling: touch;} /*滚动开启弹性滚动*/
 	/*header*/
-		header{width: 100%;height: 10%;position: fixed;overflow: hidden;z-index: 99;-moz-z-index: 99;-webkit-z-index: 99;-o-z-index: 99;-ms-z-index: 99;text-align: center;top: 0}
+		header{width: 100%;height: 14%;position: fixed;top: 0;overflow: hidden;z-index: 99;-moz-z-index: 99;-webkit-z-index: 99;-o-z-index: 99;-ms-z-index: 99;text-align: center;}
 		/* nav */	
 		#nav{width: 100%;height: 100%;background-color: black;}
 		#nav ul{width: 100%;height: 100%;margin: 0 auto;}
-		#nav ul li{float: left;width: 25%;height: 100%;padding-top: 6%;}
+		#nav ul li{float: left;display: inline-block;width: 25%;height: 100%;line-height: 5.5rem;}
 		#nav ul li a{display: inline-block;width: 100%;height: 100%;font-size: 1.6rem;color: white;}
 		#nav ul li:visited{background-color: gray;color: white;}
 		#nav ul li:active{background-color: gray;color: white;}
 		/*fixed*/	
 		.fixed{position: fixed;left: 0;top: 10%;width: 100%;height: 10%;background-color: #003366;z-index: 99;-moz-z-index: 99;-webkit-z-index: 99;-o-z-index: 99;-ms-z-index: 99;}
 		.fixed ul{width: 100%;height: 100%;border-top: 1px solid white;}
-		.fixed ul li{float: left;width: 20%;height: 100%;border: 1px solid white;text-align: center;padding-top: 6%;}	
+		.fixed ul li{float: left;display: inline-block;width: 20%;height: 100%;text-align: center;line-height: 5.5rem;}	
 		.fixed ul li a{display: inline-block;width: 100%;height: 100%;color: white;font-size: 1.2rem;}
 		.fixed ul li:visited{background-color: #003399;}
 		.fixed ul li:active{background-color: #003399;}
 	/*footer*/
 		footer{width: 100%;height: auto;padding: 2% 0 14% 0;text-align: center;background-color: black;color: white;}
-		footer .contact{font-size: 1rem;}
+		footer .contact{font-size: 1.2rem;}
 		footer .contact a{color: white;}
 		footer form{font-size: 1.4rem;width: 90%;margin: 0 auto;text-align: left;}
 		footer button{margin-top: 1%;}
-		footer .copyright{font-size: 0.6rem;}
+		footer .copyright{font-size: 1rem;}
 		
 	#bgimg{background: url(../images/bgimg.jpg)no-repeat bottom;width: 100%;height: 170px;background-size: 100%;}
 
@@ -47,7 +48,7 @@
 		.topimg{width: 90%;margin: 0 auto;}
 		.topimg img{width: 100%;height: 100%;}
 		.topimg > div {width: 100%;height: auto;background-color: green;}
-		.topimg > div > div{position: relative;overflow: hidden;float: left;width: 30%;height: 100%;margin-top: -10%;border: 3px solid #003366;margin-bottom: 11%;}
+		.topimg > div > div{position: relative;overflow: hidden;float: left;display: inline-block;width: 30%;height: 100%;margin-top :10%;border: 3px solid #003366;margin-bottom: 11%;}
 		.topimg > div > div:first-child{margin-right: 4%;}
 		.topimg > div > div:last-child{margin-left: 4%;}
 		.topimg > div > div span{position: absolute;display: block;display: none;width: 100%;height: 50%;bottom: 0;left: 0;background: rgba(255, 255, 240,0.7);z-index: 9999;-moz-z-index: 9999;-webkit-z-index: 9999;-o-z-index: 9999;-ms-z-index: 9999;text-align: center;}
@@ -56,10 +57,10 @@
 		.content h2{margin: 0 auto;color: black;margin-bottom: 4%;padding-top: 40%;}
 		.content > div{overflow: hidden;width: 100%;height: auto;text-align: center;margin-top: -24%;}
 		.content > div > div{width: 100%;height: auto;}
-		.content > div > div > div{float: left;width: 100%;height: auto;margin-bottom: 6%;}
+		.content > div > div > div{float: left;display: inline-block;width: 100%;height: auto;margin-bottom: 6%;}
 		.content > div > div > div > div{position: relative;width: 45%;height: 100%;margin: 0 2%;;box-shadow: 5px 10px 5px 5px #B0B0B0;}
-		.content > div > div > div > div:first-child{float: left;}
-		.content > div > div > div > div:last-child{float: right;}
+		.content > div > div > div > div:first-child{float: left;display: inline-block;}
+		.content > div > div > div > div:last-child{float: right;display: inline-block;}
 		.content > div > div > div > div > div{position: absolute;width: 40%;height: 100%;left: 2%;top: 0;background: rgba(191, 191, 191,0.6);}
 		.content > div > div > div > div > div a{display: block;width: 100%;height: 100%;color: white;font-size: 1.6rem;font-weight: bold;padding-top: 55%; ;
 		text-shadow:0 0 5px #008B8B,    
@@ -85,7 +86,7 @@
 		/* nav */	
 		#nav{width: 100%;height: 60%;background-color: black;}
 		#nav ul{width: 100%;height: 100%;margin: 0 auto;}
-		#nav ul li{float: left;width: 25%;height: 100%;line-height: 72px;}
+		#nav ul li{float: left;display: inline-block;width: 25%;height: 100%;line-height: 72px;}
 		#nav ul li a{display: inline-block;width: 100%;height: 100%;font-size: 1.2rem;color: white;}
 		#nav ul li a:active{font-size: 1.4rem;}
 	/*footer*/
@@ -98,7 +99,7 @@
 	/*fixed*/	
 		.fixed{position: fixed;left: 0;top: 20%;width: 12%;height: 400px;z-index: 9999;-moz-z-index: 9999;-webkit-z-index: 9999;-o-z-index: 9999;-ms-z-index: 9999;}
 		.fixed ul{width: 100%;height: 100%;}
-		.fixed ul li{float: left;width: 100%;height: 14%;margin-bottom: 5%;background-color: rgba(0, 51, 102,0.8);}
+		.fixed ul li{float: left;display: inline-block;width: 100%;height: 14%;margin-bottom: 5%;background-color: rgba(0, 51, 102,0.8);}
 		.fixed ul li a{display: block;width: 100%;height: 100%;line-height: 67.2px;font-size: 1.6rem;color: white;text-align: center;}
 		.fixed ul li a:active{text-decoration: none;background-color: #003366;}
 
@@ -109,7 +110,7 @@
 		.topimg{width: 68%;margin: 0 auto;}
 		.topimg img{width: 100%;height: 100%;}
 		.topimg > div {width: 100%;height: auto;background-color: green;}
-		.topimg > div > div{position: relative;overflow: hidden;float: left;width: 28%;height: 100%;margin-top: -10%;border: 5px solid #003366;margin-bottom: 11%;}
+		.topimg > div > div{position: relative;overflow: hidden;float: left;display: inline-block;width: 28%;height: 100%;margin-top: -10%;border: 5px solid #003366;margin-bottom: 11%;}
 		.topimg > div > div:first-child{margin-right: 8%;}
 		.topimg > div > div:last-child{margin-left: 8%;}
 		.topimg > div > div span{position: absolute;display: block;display: none;width: 100%;height: 50%;bottom: 0;left: 0;background: rgba(255, 255, 240,0.7);z-index: 9999;-moz-z-index: 9999;-webkit-z-index: 9999;-o-z-index: 9999;-ms-z-index: 9999;text-align: center;}
@@ -118,10 +119,10 @@
 		.content h2{margin: 0 auto;color: black;margin-bottom: 4%;padding-top: 16%;}
 		.content > div{overflow: hidden;width: 100%;height: auto;text-align: center;}
 		.content > div > div{width: 100%;height: auto;}
-		.content > div > div > div{float: left;width: 100%;height: auto;margin-bottom: 6%;}
+		.content > div > div > div{float: left;display: inline-block;width: 100%;height: auto;margin-bottom: 6%;}
 		.content > div > div > div > div{position: relative;width: 45%;height: 100%;margin: 0 2%;;box-shadow: 5px 10px 5px 5px #B0B0B0;}
-		.content > div > div > div > div:first-child{float: left;}
-		.content > div > div > div > div:last-child{float: right;}
+		.content > div > div > div > div:first-child{float: left;display: inline-block;}
+		.content > div > div > div > div:last-child{float: right;display: inline-block;}
 		.content > div > div > div > div > div{position: absolute;width: 40%;height: 100%;left: 2%;top: 0;background: rgba(191, 191, 191,0.6);}
 		.content > div > div > div > div > div a{display: block;width: 100%;height: 100%;color: white;font-size: 2em;font-weight: bold;line-height: 220px;
 		text-shadow:0 0 5px #008B8B,    
@@ -146,7 +147,7 @@
 		/* nav */	
 		#nav{width: 100%;height: 50%;background-color: black;}
 		#nav ul{width: 60%;height: 100%;margin: 0 auto;}
-		#nav ul li{float: left;width: 25%;height: 100%;line-height: 70px;}
+		#nav ul li{float: left;display: inline-block;width: 25%;height: 100%;line-height: 70px;}
 		#nav ul li a{display: inline-block;width: 100%;height: 100%;font-size: 1.6rem;color: white;}
 		#nav ul li a:hover{font-size: 2rem;}
 	/*footer*/
@@ -160,29 +161,29 @@
 	/*fixed*/	
 		.fixed{position: fixed;left: 0;top: 20%;width: 12%;height: 400px;z-index: 9999;-moz-z-index: 9999;-webkit-z-index: 9999;-o-z-index: 9999;-ms-z-index: 9999;}
 		.fixed ul{width: 100%;height: 100%;}
-		.fixed ul li{float: left;width: 100%;height: 14%;margin-bottom: 5%;background-color: rgba(0, 51, 102,0.8);}
+		.fixed ul li{float: left;display: inline-block;width: 100%;height: 14%;margin-bottom: 5%;background-color: rgba(0, 51, 102,0.8);cursor: pointer;cursor: hand\0;}
 		.fixed ul li a{display: block;width: 100%;height: 100%;line-height: 67.2px;font-size: 1.6rem;color: white;text-align: center;}
-		.fixed ul li a:hover{text-decoration: none;background-color: #003366;}
+		.fixed ul li a:hover{;background-color: #003366;}
+	/*背景图*/
 	#bgimg{background: url(../images/bgimg.jpg)no-repeat bottom;width: 100%;height: 800px;}
 	/*section*/
 		section{width: 100%;height: auto;overflow: hidden;}
 		.topimg{width: 68%;margin: 0 auto;}
 		.topimg img{width: 100%;height: 100%;}
 		.topimg > div {width: 100%;height: auto;background-color: green;}
-		.topimg > div > div{position: relative;overflow: hidden;float: left;width: 28%;height: 100%;margin-top: -10%;border: 5px solid #003366;margin-bottom: 11%;}
+		.topimg > div > div{position: relative;overflow: hidden;float: left;display: inline-block;width: 28%;height: 100%;margin-top: -10%;border: 5px solid #003366;margin-bottom: 11%;}
 		.topimg > div > div:first-child{margin-right: 8%;}
 		.topimg > div > div:last-child{margin-left: 8%;}
 		.topimg > div > div span{position: absolute;display: block;display: none;width: 100%;height: 50%;bottom: 0;left: 0;background: rgba(255, 255, 240,0.7);z-index: 9999;-moz-z-index: 9999;-webkit-z-index: 9999;-o-z-index: 9999;-ms-z-index: 9999;text-align: center;}
-		.topimg > div > div span p{font-size: 1.4rem;font-weight: bold;color: black;margin-top: 18%;}
-		
+		.topimg > div > div span p{font-size: 1.4rem;font-weight: bold;color: black;margin-top: 18%;}		
 		.content{width: 1100px;margin: 5% auto;}
 		.content h2{margin: 0 auto;color: black;margin-bottom: 4%;padding-top: 10%;}
 		.content > div{overflow: hidden;width: 100%;height: auto;text-align: center;}
 		.content > div > div{width: 100%;height: auto;}
-		.content > div > div > div{float: left;width: 100%;height: auto;margin-bottom: 6%;}
+		.content > div > div > div{float: left;display: inline-block;width: 100%;height: auto;margin-bottom: 6%;}
 		.content > div > div > div > div{position: relative;width: 45%;height: 100%;margin: 0 2%;;box-shadow: 5px 10px 5px 5px #B0B0B0;}
-		.content > div > div > div > div:first-child{float: left;}
-		.content > div > div > div > div:last-child{float: right;}
+		.content > div > div > div > div:first-child{float: left;display: inline-block;}
+		.content > div > div > div > div:last-child{float: right;display: inline-block;}
 		.content > div > div > div > div > div{position: absolute;width: 40%;height: 100%;left: 2%;top: 0;background: rgba(191, 191, 191,0.6);}
 		.content > div > div > div > div > div a{display: block;width: 100%;height: 100%;color: white;font-size: 2em;font-weight: bold;line-height: 300px;
 		text-shadow:0 0 5px #008B8B,    
@@ -191,7 +192,7 @@
 	     			0 0 40px white,    
 	       			0 0 70px white;}
 
-		.content > div > div > div > div > div a:hover{text-decoration: none;
+		.content > div > div > div > div > div a:hover{
 		text-shadow:0 0 5px #008B8B,    
 	        		0 0 15px #008B8B,    
 	       			0 0 30px #008B8B,    
