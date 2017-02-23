@@ -58,8 +58,7 @@
 		section #content > div > div:last-child{width: 100%;height: 100%;text-align: left;}
 		section #content .top{width: 100%;height: auto;padding: 1rem;font-size: 2rem;font-weight: bold;text-align: center;}
 		section #content .bottom{position: relative;width: 100%;height: auto;overflow: hidden;line-height: 3.6rem;}
-		section #content .bottom a{position: absolute;display: inline-block;width: 28%;height: 20%;right: 0;bottom: 0;background-color: red;
-			text-align: center;color: white;font-size: 1.4rem;border-top: 2px solid white;border-bottom: 2px solid white;border-left: 2px solid white;border-radius: 25px 0 0 25px;}
+		section #content .bottom a{position: absolute;display: inline-block;width: 28%;height: 20%;right: 0;bottom: 0;background-color: red;text-align: center;color: white;font-size: 1.4rem;border-top: 2px solid white;border-bottom: 2px solid white;border-left: 2px solid white;border-radius: 25px 0 0 25px;}
 		section #content .bottom a:active{text-decoration: none;width: 32%;
 		transition: width 1s;
 		-moz-transition: width 1s;
@@ -91,7 +90,7 @@
 @media  screen  and (min-width: 768px) and (max-width: 1023px){
 	img{max-width: 100%;width: auto;}
 	/*header*/
-		header{width: 100%;height: 120px;position: fixed;overflow: hidden;z-index: 99;-moz-z-index: 99;-webkit-z-index: 99;-o-z-index: 99;-ms-z-index: 99;text-align: center;}
+	header{width: 100%;height: 120px;position: fixed;overflow: hidden;z-index: 99;-moz-z-index: 99;-webkit-z-index: 99;-o-z-index: 99;-ms-z-index: 99;text-align: center;}
 		/* nav */	
 		#nav{width: 100%;height: 60%;background-color: black;}
 		#nav ul{width: 100%;height: 100%;margin: 0 auto;}
@@ -165,7 +164,7 @@
 @media  screen  and (min-width: 1024px)  {
 
 	/*header*/
-		header{width: 100%;height: 140px;position: fixed;overflow: hidden;z-index: 99;-moz-z-index: 99;-webkit-z-index: 99;-o-z-index: 99;-ms-z-index: 99;text-align: center;}
+	header{width: 100%;height: 140px;position: fixed;overflow: hidden;z-index: 99;-moz-z-index: 99;-webkit-z-index: 99;-o-z-index: 99;-ms-z-index: 99;text-align: center;}
 		/* nav */	
 		#nav{width: 100%;height: 50%;background-color: black;}
 		#nav ul{width: 60%;height: 100%;margin: 0 auto;}
