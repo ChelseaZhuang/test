@@ -51,7 +51,7 @@
 @media  screen  and (min-width: 320px) and (max-width: 767px)  {
 	body{width: 100%;height: 100%;overflow: scroll;-webkit-overflow-scrolling: touch;/*滚动开启弹性滚动*/}
 	/*header*/
- 	header{position: relative;width: 100%;height: 10%;overflow: hidden;margin-top: 1rem;}
+ 	header{position: relative;width: 100%;height: 10%;overflow: hidden;margin-top: 1% 1%;padding-bottom: 2%;}
  	header > div{width: 100%;height: auto;margin-bottom: 4rem;text-align: center;color: #3D3D3D;}
  	header > div:first-child{margin-top: 40px;}
  	header > div > div:first-child{width: 100%;height: auto;}

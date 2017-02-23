@@ -33,6 +33,7 @@
 </head>
 
 <body>
+<!-- 固定右侧导航 -->
 <div id="fixednav">
 	<a id="fixednav1" href="" target="_blank" class="fa fa-qq fa-2x"></a>
 	<span class="fixednav1" style="display: none;">447188404</span>	
@@ -42,10 +43,16 @@
 	<span class="fixednav3" style="display: none;">4001-800-8888</span>
 	<a id="arrowTop" target="_blank" class="fa fa-arrow-circle-o-up fa-2x"></a>
 </div>
+<!-- end 固定右侧导航 -->
 
+<!-- 头部导航 -->
 <header>
 	<div>
 		<div><a href="#"><img src="images/homeimg/LOGO.png" alt="LOGO"></a></div>
+		<div class="login">
+			<a href="javacript:;" id="tologin">注册</a>
+			<a href="javacript:;" id="login">登录</a>
+		</div>
 		<div>
 			<span><b class="fa fa-volume-control-phone fa-2x"></b>4001-800-888</span>
 			<a href="" target="_blank"><i class="fa fa-weibo fa-lg"></i></a>
@@ -63,8 +70,24 @@
 		</ul>	
 	</nav>
 </header>
+<!-- end 固定右侧导航 -->
 
-<div class="slider-wrapper theme-default"><!-- 图片轮播 -->
+<!--登录界面-->
+<div id="Login">
+	<button id="close">关闭</button><br>
+	<form action="" method="post">
+		<label for="#email">Email</label><br>
+		<input type="email" name="mail" id="email" value="输入您的邮箱地址"><br>
+		<label for="#password">Password</label><br>
+		<input type="password" name="password"><br>
+		<input type="submit" name="To" value="注册">
+		<input type="submit" name="Go" value="登录">
+	</form>
+</div>
+<!-- end 登录界面-->
+
+<!-- 图片轮播 -->
+<div class="slider-wrapper theme-default">
     <div id="slider" class="nivoSlider">
         <img src="js/picsplugin/images/toystory.jpg" data-thumb="js/picsplugin/images/toystory.jpg" alt="轮播图"/>
         <img src="js/picsplugin/images/up.jpg" data-thumb="js/picsplugin/images/up.jpg" alt="轮播图" />
@@ -73,6 +96,7 @@
     </div>
 </div> <!-- end 图片轮播 -->
 
+<!-- 内容 -->
 <section>
 	<div class="content">
 		<div class="release">
@@ -111,7 +135,9 @@
 		</div><!-- end about-->
 	</div><!-- end content-->
 </section>
+<!-- end 内容 -->
 
+<!-- 页脚 -->
 <footer>
 	<div><img src="images/homeimg/wechaterweima.jpg" alt="wechaterweima"></div>
 	<ul>
@@ -124,6 +150,7 @@
 	<hr>
 	<div><p>Copyright © 2017.Company name All rights reserved.</p></div>
 </footer>
+<!-- end 页脚 -->
 
 <!--js脚本文件-->
 	<script src="./js/jquery.min.js"></script> <!-- jquery -->
@@ -132,8 +159,17 @@
 	<script src="./js/picsplugin/js/jquery.nivo.slider.js"></script>  <!-- 轮播图 -->
 	<script>
 		$(document).ready(function() {
-        	$("#slider").nivoSlider();
-		})  //轮播图
+        	$("#slider").nivoSlider();   //轮播图
+        	$("#tologin").click(function(){
+        		$("#Login").fadeIn(300);
+        	});
+        	$("#login").click(function(){
+        		$("#Login").fadeIn(300);
+        	});
+        	$("#Login #close").click(function(){
+        		$("#Login").fadeOut(300);
+        	});
+		}) 
 		document.body.addEventListener('touchstart',function(){}); //touchstart事件
 	</script>	
 </body>

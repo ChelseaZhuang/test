@@ -1,7 +1,21 @@
 /* IE6/7/8 */
 @media \0screen\,screen\9{
 	body{width: 100%;height: 100%;}
-   	.slider-wrapper{width: 100%;height: auto;overflow: hidden;} /*轮播图*/ 
+	header .login{height: 100%;line-height: 60px;width: 160px;}
+	header .login,header .login a{float: left;display: inline-block;color: black;font-size: 1.6rem;}
+	header .login a:hover{color: #EE1289;}
+	header .login a:last-child{margin-left: 10%;}
+
+	/*登录界面*/
+	#Login{display: none;position: fixed;z-index: 999999999;-webkit-z-index: 999999999;top: 20%;left: 30%;width: 40%;height: 300px;background-color: white;padding-left: 10%;overflow: hidden;}
+	#Login #close{background-color: white;font-size: 1.6rem;margin-left: 90%;border: none;color: black;outline: none;padding: 1%;width: 50px;}
+	#Login input[type="email"],#Login input[type="password"]{width: 60%;height: 30px;border: 1px solid black;color: black;}
+	#Login input[type="submit"]{width: 10%;height: 40px;background-color: black;color: white;margin-top: 2%;padding: 2%;}
+	#Login label{margin-top: 5%;font-size: 12px;color: black;}
+	
+	/*轮播图*/ 
+   	.slider-wrapper{width: 100%;height: auto;overflow: hidden;}
+
  	section{width: 100%;height: auto;clear: both;}
 		.content{width: 100%;height: auto;margin: 2.5% auto;padding: 0 18%;overflow: hidden;} 
 		.content > div{width: 1280px;height: 100%;margin: 0 auto;padding: 27px 0;text-align: center;}	
@@ -28,7 +42,21 @@
 /* iphone */
 @media  screen  and (min-width: 320px) and (max-width: 767px)  {
 	body{width: 100%;height: 100%;overflow: scroll;-webkit-overflow-scrolling: touch;/*滚动开启弹性滚动*/}
-   	.slider-wrapper{width: 100%;height: auto;overflow: hidden;} /*轮播图*/ 
+	header .login{height: 100%;width: 100%;margin: 0  0 5% 5%;}
+	header .login,header .login a{float: left;display: inline-block;font-size: 1.4rem;}
+	header .login a{border: 1px solid black;padding: 1%;background-color: black;color: white;}
+	header .login a:active{color: #EE1289;}
+	header .login a:last-child{margin-left: 2%;}
+	/*登录界面*/
+	#Login{display: none;position: fixed;z-index: 999999999;-webkit-z-index: 999999999;top: 25%;left: 10%;width: 80%;height: 300px;background-color: white;padding-left: 10%;overflow: hidden;}
+	#Login #close{font-size: 1.4rem;margin-left: 72%;border: none;color: white;outline: none;padding: 1%;width: 60px;height: 40px;background-color: black;}
+	#Login input[type="email"],#Login input[type="password"]{width: 89%;height: 30px;border: 1px solid black;color: black;}
+	#Login input[type="submit"]{width: 50px;height: 40px;background-color: black;color: white;margin-top: 5%;padding: 2%;}
+	#Login label{margin-top: 5%;font-size: 12px;color: black;}
+
+	/*轮播图*/
+   	.slider-wrapper{width: 100%;height: auto;overflow: hidden;}
+
 	section{width: 100%;height: auto;}
 		.content{width: 100%;overflow: hidden;padding: 0 10%;overflow: hidden;}
 		.content > div{width: 100%;;height: auto;margin: 0 auto;text-align: center;padding: 6% 0;}
@@ -56,7 +84,21 @@
 /* iPad */
 @media  screen  and (min-width: 768px) and (max-width: 1023px){
 	body{width: 100%;height: 100%;}
-	.slider-wrapper{width: 100%;height: auto;overflow: hidden;} /*轮播图*/
+	header .login{height: 100%;width: 100%;margin: 0  0 5% 5%;}
+	header .login,header .login a{float: left;display: inline-block;font-size: 2rem;}
+	header .login a{border: 1px solid black;padding: 1%;background-color: black;color: white;}
+	header .login a:active{color: #EE1289;}
+	header .login a:last-child{margin-left: 2%;}
+	/*登录界面*/
+	#Login{display: none;position: fixed;z-index: 999999999;-webkit-z-index: 999999999;top: 20%;left: 15%;width: 70%;height: 300px;background-color: white;padding-left: 10%;overflow: hidden;}
+	#Login #close{font-size: 1.8rem;margin-left: 80%;border: none;color: white;outline: none;padding: 1%;width: 80px;height: 50px;background-color: black;}
+	#Login input[type="email"],#Login input[type="password"]{width: 89%;height: 30px;border: 1px solid black;color: black;}
+	#Login input[type="submit"]{width: 50px;height: 40px;background-color: black;color: white;margin-top: 5%;}
+	#Login label{margin-top: 5%;font-size: 12px;color: black;}
+
+	/*轮播图*/	
+	.slider-wrapper{width: 100%;height: auto;overflow: hidden;} 
+
 	section{width: 100%;height: auto;}
 		.content{width: 100%;height: auto;overflow: hidden;padding: 0 10%;}
 		.content > div{width: 100%;margin: 0 auto;padding: 6% 0;text-align: center;}	
@@ -84,7 +126,21 @@
 
 /*大于1024px*/
 @media  screen  and (min-width: 1024px)  {
-	.slider-wrapper{width: 100%;height: auto;overflow: hidden;} /*轮播图*/
+	header .login{height: 100%;line-height: 60px;width: 160px;}
+	header .login,header .login a{float: left;display: inline-block;color: black;font-size: 1.6rem;}
+	header .login a:hover{color: #EE1289;}
+	header .login a:last-child{margin-left: 10%;}
+
+	/*登录界面*/
+	#Login{display: none;position: fixed;z-index: 999999999;-webkit-z-index: 999999999;top: 20%;left: 30%;width: 40%;height: 300px;background-color: white;padding-left: 10%;overflow: hidden;}
+	#Login #close{background-color: white;font-size: 1.6rem;margin-left: 90%;border: none;color: black;outline: none;padding: 1%;width: 50px;}
+	#Login input[type="email"],#Login input[type="password"]{width: 60%;height: 30px;border: 1px solid black;color: black;}
+	#Login input[type="submit"]{width: 10%;height: 40px;background-color: black;color: white;margin-top: 2%;padding: 2%;}
+	#Login label{margin-top: 5%;font-size: 12px;color: black;}
+
+	/*轮播图*/
+	.slider-wrapper{width: 100%;height: auto;overflow: hidden;} 
+
  	section{width: 100%;height: auto;}
 		.content{width: 100%;height: auto;margin: 2.5% auto;padding: 0 18%;overflow: hidden;}  
 		.content > div{width: 1280px;height: auto;margin: 0 auto;padding: 27px 0;text-align: center;}	
