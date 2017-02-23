@@ -25,17 +25,17 @@
 		nav{position: fixed;top: 0;width: 100%;height: 80px;background: black;z-index: 999999;-moz-z-index: 999999;-webkit-z-index: 999999;-o-z-index: 999999;-ms-z-index: 999999;}
 		nav > div{width: 100%;height: 100%;line-height: 80px;margin: 0 auto;}	
 		nav .nav{float:left;display: inline-block;width: 25%;height: 100%;color: white;text-shadow: 0 1px 1px black;text-align: center;font-size: 1.6rem;}   
-	    nav .nav:visited{background-color: gray;color: white;}
+	   	nav .nav:visited{background-color: gray;color: white;}
 		nav .nav:active{background-color: gray;color: white;}
 		nav .more{display: none;}
-	    /* 右侧隐藏导航*/
+	   	/* 右侧隐藏导航*/
 		.nav_more{width: 100%;height: auto;overflow: hidden;margin: 10% 0;padding: 0 5%;}
 		.nav_more p{color: red;font-size: 1.6rem;}
 		.nav_more ul{width: 100%;height: 100%;}
 		.nav_more li{float: left;display: inline-block;margin: 0 2%;}
 		.nav_more a{display: inline-block;width: 100%;height: 100%;color: black;font-size: 1.6rem;}
 
-		article{position:absolute;width: 50%;height: auto;top: 40%;left: 10%;z-index: 1000;-moz-z-index: 1000;-webkit-z-index: 1000;-o-z-index: 1000;-ms-z-index: 1000;}
+		article{position:absolute;width: 50%;height: auto;top: 32%;left: 10%;z-index: 1000;-moz-z-index: 1000;-webkit-z-index: 1000;-o-z-index: 1000;-ms-z-index: 1000;}
 		article p{color:white;text-align: center;}
 		article .big{font-size: 1.8rem;font-weight: bold;}
 		article .small{font-size: 1.2rem;}
@@ -62,7 +62,7 @@
 		section .swiper-container{width: 100%;height: auto;margin-top: -18%;}
 		.swiper-button-prev,.swiper-button-next{top: 68%!important;}
 		/*忠实用户*/
-	    section .people{height: auto;overflow: hidden;}          
+	   	section .people{height: auto;overflow: hidden;}          
 		section .people > div{position: relative;float:left;display: inline-block;width: 30%;margin: 1.6%;height: auto;} /*忠实用户三个div*/
 		section .people > div > div:first-child{width: 100%;height: 100%;}
 		section .people > div > div:last-child{display: none;position: absolute;width: 100%;height: 100%;left: 0;top: 0;background-color: rgba(41,41,41,0.8);text-align: center;}/*忠实用户hover*/
@@ -126,9 +126,9 @@
 		nav{position: fixed;top: 0;width: 100%;height: 80px;background-color: black;z-index: 99999;-moz-z-index: 99999;-webkit-z-index: 99999;-o-z-index: 99999;-ms-z-index: 99999;}
 		nav > div{width: 70%;height: 100%;line-height: 80px;margin: 0 auto;}	
 		nav .nav{float:left;display: inline-block;width: 25%;height: 100%;color: white;text-shadow: 0 1px 1px black;text-align: center;font-size: 1.8rem;}   
-	    nav .nav:active{font-size: 2rem;font-weight: bold;text-decoration: none;color: white;} 
+	   	nav .nav:active{font-size: 2rem;font-weight: bold;text-decoration: none;color: white;} 
 		nav .more{display: none;}
-	    /* 右侧隐藏导航*/
+	    	/* 右侧隐藏导航*/
 		.nav_more{width: 100%;height: auto;overflow: hidden;margin: 5% 0;padding: 0 5%;}
 		.nav_more p{color: red;font-size: 1.6rem;}
 		.nav_more ul{width: 100%;height: 100%;}
@@ -161,7 +161,7 @@
 		section .swiper-container{width: 100%;height: auto;margin-top: -9%;}
 		.swiper-button-prev,.swiper-button-next{top: 68%!important;}
 		/*忠实用户*/
-	    section .people{height: auto;overflow: hidden;}          
+	    	section .people{height: auto;overflow: hidden;}          
 		section .people > div{position: relative;float:left;display: inline-block;width: 30%;margin: 1.6%;height: auto;} /*忠实用户三个div*/
 		section .people > div > div:first-child{width: 100%;height: 100%;}
 		section .people > div > div:last-child{display: none;position: absolute;width: 100%;height: 100%;left: 0;top: 0;background-color: rgba(41,41,41,0.8);text-align: center;}/*忠实用户hover*/
@@ -189,33 +189,34 @@
 	/*fixed背景图*/
 	#bg{display: none;}
 		
-		/*横线闪烁*/
-		#line{
-			border-bottom: 2px solid black;
-			width: 16px;height: 42px;
-			display: inline-block;
-			-webkit-animation: twinkling 1s infinite ease-in-out;
-			-animation: twinkling 1s infinite ease-in-out;
-		} 
+	/*横线闪烁*/
+	#line
+	{
+		border-bottom: 2px solid black;
+		width: 16px;height: 42px;
+		display: inline-block;
+		-webkit-animation: twinkling 1s infinite ease-in-out;
+		-animation: twinkling 1s infinite ease-in-out;
+	} 
 
-		@-webkit-keyframes twinkling
-		{ 
-				0%{ 
-				opacity: 0; 
-			} 
-				100%{ 
-				opacity: 1; 
-			} 
+	@-webkit-keyframes twinkling
+	{ 
+			0%{ 
+			opacity: 0; 
 		} 
-		@keyframes twinkling
-		{ 
-				0%{ 
-				opacity: 0; 
-				} 
-				100%{ 
-				opacity: 1; 
-				} 
-		}
+			100%{ 
+			opacity: 1; 
+		} 
+	} 
+	@keyframes twinkling
+	{ 
+			0%{ 
+			opacity: 0; 
+		} 
+			100%{ 
+			opacity: 1; 
+		} 
+	}
 }
 
 /*大于1024px*/
@@ -226,36 +227,34 @@
 	header,section,.people{overflow: hidden;}
 	section > div{margin: 0 auto;}
 
-/*header*/
+	/*header*/
 	header{position: relative;width: 100%;height: auto;}
 		/*导航*/
 		nav{position: absolute;top: 0;left: 0;width: 100%;height: 80px;background-color: rgba(8,8,8,0.6);z-index: 999;-moz-z-index: 999;-webkit-z-index: 999;-o-z-index: 999;-ms-z-index: 999;}
 		nav > div{width: 70%;height: 100%;line-height: 80px;margin: 0 auto;}	
 		nav .nav{float:left;display: inline-block;width: 15%;color: white;text-shadow: 0 1px 1px black;text-align: center;font-size: 1.8rem;}   
-	    nav .nav:hover{font-size: 2rem;font-weight: bold;text-decoration: none;color: white;} 
+	    	nav .nav:hover{font-size: 2rem;font-weight: bold;text-decoration: none;color: white;} 
 		nav .more{display: inline-block;width: 5%;height: 100%;line-height: 80px;margin-left: 20%;text-align: center;}
-	    nav .more i{color:white;text-shadow: 0 1px 1px black;}
-	    nav .more i:hover{color :#0066ff;text-shadow: 0 1px 2px :#0066ff;}
-	    /* 右侧隐藏导航*/
+	    	nav .more i{color:white;text-shadow: 0 1px 1px black;}
+	    	nav .more i:hover{color :#0066ff;text-shadow: 0 1px 2px :#0066ff;}
+	    	/* 右侧隐藏导航*/
 		.nav_more{position: absolute;width: 15%;height: auto;right: -20%;top: 20%;padding: 2% 0;background-color: rgba(169,169,169,0.8);z-index: 999;-moz-z-index: 999;-webkit-z-index: 999;-o-z-index: 999;-ms-z-index: 999;}
 		.nav_more p{font-size: 1.6rem;color: red;margin-left: 2%;}
 		.nav_more ul li{height: 50px;line-height:50px;border: 2px solid #C0C0C0;margin-bottom: 10px;}
 		.nav_more ul li:hover{background-color: #C0C0C0;}
 		.nav_more li a{display: inline-block;width: 100%;height: 100%;margin-left: 10%;color: white;}
-			/* 右侧隐藏导航hover样式*/
+		/* 右侧隐藏导航hover样式*/
 		.nav_more li a:hover{margin-left: 5%;color: white;text-decoration: none;}
-
 		article{position:absolute;width: 50%;height: auto;top: 45%;left: 10%;z-index: 1000;-moz-z-index: 1000;-webkit-z-index: 1000;-o-z-index: 1000;-ms-z-index: 1000;}
 		article p{text-indent: 1rem;letter-spacing: 1rem;color:white;text-align: center;}
 		article .big{font-size: 4rem;font-weight: bold;}
 		article .small{font-size: 2rem;}
 
-/*section*/
+	/*section*/
 	section{background-color: white;padding-bottom: 60px;}
 		section .wordtop{color: black;font-size: 4.2rem;width: 50%;height: auto;margin: 8rem auto;border: 1px solid black;padding: 4rem;}
 		/*文字部分公共*/
 		section .contentWord,.contentWord2{height: auto;width: 40%;margin: 10rem auto;text-align: center;padding:2rem;}
-
 		/*图片链接部分*/
 		section .contentPics,.people{width: 1024px;}
 		section .contentWord p:first-child,.contentWord2 p:first-child{font-size: 2.6rem;color: #141414;}
@@ -269,12 +268,11 @@
 		section .contentPics p span{color: #CD3700;font-size: 2.5rem;text-shadow: 0 1px 2px #4D4D4D;}
 		section .contentPics i{color: #CD3700;display: inline-block;margin-right: 10px;}
 		section .contentPics img:hover{opacity: 0.8;}
-
 		/*三图轮播*/
 		section .swiper-container{width: 1024px;height: auto;}
 		
 		/*忠实用户*/
-	    section .people{height: auto;overflow: hidden;}          
+	    	section .people{height: auto;overflow: hidden;}          
 		section .people > div{position: relative;float:left;display: inline-block;width: 30%;margin: 1.6%;height: auto;} /*忠实用户三个div*/
 		section .people > div > div:first-child{width: 100%;height: 100%;}
 		section .people > div > div:last-child{display: none;position: absolute;width: 100%;height: 100%;left: 0;top: 0;background-color: rgba(41,41,41,0.8);text-align: center;}/*忠实用户hover*/
@@ -283,7 +281,7 @@
 		section .people a{display: block;width: 100%;height: 100%;}
 		section .people a:hover{text-decoration: none;}
 
-/*footer*/
+	/*footer*/
 	footer{color: white;overflow: hidden;}
 		footer .box1{background-color: #292929;height: 340px;opacity: 0.7;}
 		footer,footer .box1,footer .box2{width: 100%;}
@@ -302,35 +300,35 @@
 		footer .contact a,footer .contact p{color: #DEDEDE;}
 		footer .contact a:hover{color: white;text-decoration: none;}
 
-		/*fixed背景图*/
-		#bg{position: fixed;bottom: 0;left: 0;width: 100%;height: 1080px;z-index: -10;-moz-z-index: -10;-webkit-z-index: -10;-o-z-index: -10;-ms-z-index: -10;background: url(../images/bgfoot.jpg) no-repeat;}
+	/*fixed背景图*/
+	#bg{position: fixed;bottom: 0;left: 0;width: 100%;height: 1080px;z-index: -10;-moz-z-index: -10;-webkit-z-index: -10;-o-z-index: -10;-ms-z-index: -10;background: url(../images/bgfoot.jpg) no-repeat;}
 		
-		/*横线闪烁*/
-		#line{
-			border-bottom: 2px solid black;
-			width: 16px;height: 42px;
-			display: inline-block;
-			-webkit-animation: twinkling 1s infinite ease-in-out;
-			-animation: twinkling 1s infinite ease-in-out;
-		} 
+	/*横线闪烁*/
+	#line
+	{
+		border-bottom: 2px solid black;
+		width: 16px;height: 42px;
+		display: inline-block;
+		-webkit-animation: twinkling 1s infinite ease-in-out;
+		-animation: twinkling 1s infinite ease-in-out;
+	} 
 
-		@-webkit-keyframes twinkling
-		{ 
-				0%{ 
-				opacity: 0; 
-			} 
-				100%{ 
-				opacity: 1; 
-			} 
+	@-webkit-keyframes twinkling
+	{ 
+			0%{ 
+			opacity: 0; 
 		} 
-		@keyframes twinkling
-		{ 
-				0%{ 
-				opacity: 0; 
-				} 
-				100%{ 
-				opacity: 1; 
-				} 
-		}
-
+			100%{ 
+			opacity: 1; 
+		} 
+	} 
+	@keyframes twinkling
+	{ 
+			0%{ 
+			opacity: 0; 
+		} 
+			100%{ 
+			opacity: 1; 
+		} 
+	}
 }
